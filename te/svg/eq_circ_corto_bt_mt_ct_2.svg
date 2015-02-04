@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:ns0="http://www.iki.fi/pav/software/textext/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="286.69638"
+   height="123.56476"
+   id="svg58009"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="eq_circ_corto_bt_mt_ct_2.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="208.65869"
+     inkscape:cy="82.938426"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-bbox="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="954"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       originy="-558.52553px"
+       originx="-38.81074px"
+       snapvisiblegridlinesonly="true"
+       enabled="true"
+       visible="true"
+       empspacing="5"
+       id="grid58158"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <defs
+     id="defs58011">
+    <marker
+       style="overflow:visible"
+       id="marker7868-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         id="path7870-95"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7868-5-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         id="path7870-95-8"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7868-5-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         id="path7870-95-9"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata58014">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-38.81074,-370.27189)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 110,452.3622 0,-10"
+       id="path70952-86-9-8-0-1"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:0.99999988px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 125,442.3622 -15,0"
+       id="path70952-9-51-8-1-0-3"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:1.00487924;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 165,442.3622 -10,0"
+       id="path70952-9-5-4-3-6-5-2"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 154.8681,492.3622 -44.8681,0"
+       id="path70952-9-4-2-4-6-2-2"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 110,492.3622 0,-10"
+       id="path70952-8-1-0-6-0-8"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 230,492.3622 -74.8387,0"
+       id="path70952-9-4-5-1-9-0-2-3"
+       inkscape:connector-curvature="0" />
+    <g
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       transform="translate(65.000013,75.000007)"
+       id="g16145-1-7-5-4-4-3">
+      <g
+         transform="translate(-35,2.6171874e-6)"
+         id="g15315-0-3-8-1-0-9">
+        <path
+           inkscape:connector-curvature="0"
+           id="path70904-5-8-2-24-9-2"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6;stroke-opacity:1;stroke-dasharray:none;display:inline"
+           d="m 70,392.35988 c 0,5.52061 4.477217,10.0023 9.999424,10.0023 5.522209,0 10.000576,-4.48169 10.000576,-10.0023 0,-5.52062 -4.478367,-9.9977 -10.000576,-9.9977 -5.522207,0 -9.999424,4.47708 -9.999424,9.9977" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 80,382.36218 0,-5"
+           id="path15311-4-6-4-6-5-1"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 80,402.36218 0,5"
+           id="path15313-5-6-6-4-3-2"
+           inkscape:connector-curvature="0" />
+        <g
+           transform="matrix(1.1522065,0,0,1.25,67.784307,75.27218)"
+           id="g70398-5-0-6-2-0-1">
+          <path
+             inkscape:connector-curvature="0"
+             id="path70400-1-4-1-2-3-6"
+             style="fill:none;stroke:#000000;stroke-width:0.83325869;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6;stroke-opacity:1;stroke-dasharray:none"
+             d="m 14.941,253.672 c -4.339,13.019 -4.339,-13.024 -8.679,0" />
+        </g>
+      </g>
+    </g>
+    <use
+       height="1052.3622"
+       width="744.09448"
+       xlink:href="#textext-2dc96b71-1"
+       x="391.41299"
+       y="134.765"
+       id="use9598-4-3-98-8-6-6"
+       style="fill:#000000;fill-opacity:1;display:inline"
+       transform="matrix(1.198113,0,0,1.198113,-367.08343,305.50559)"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       transform="matrix(0,1.25,-1.5,0,728.54331,354.8622)"
+       id="g16140-4-8-6"
+       style="fill:#ffffff">
+      <rect
+         style="color:#000000;fill:#ffffff;stroke:#000000;stroke-width:0.73029679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect15342-9-7-7"
+         width="4.8000002"
+         height="16.000031"
+         x="67.599998"
+         y="384.36218"
+         rx="4.4346442"
+         ry="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,384.36216 0,-2"
+         id="path16136-0-7-3"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,400.36218 0,2"
+         id="path16138-4-9-6"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="fill:#ffffff"
+       transform="matrix(0,1.25,-1.5,0,778.54327,354.86218)"
+       id="g16140-4-8-6-6-7-8">
+      <rect
+         style="color:#000000;fill:#ffffff;stroke:#000000;stroke-width:0.73029679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect15342-9-7-7-5-8-7"
+         width="4.8000002"
+         height="16.000031"
+         x="67.599998"
+         y="384.36218"
+         rx="4.4346442"
+         ry="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,384.36216 0,-2"
+         id="path16136-0-7-3-5-9-3"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,400.36218 0,2"
+         id="path16138-4-9-6-0-3-4"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:1.00487924;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 214.99976,442.36221 -10,0"
+       id="path70952-9-5-4-3-6-5-2-7-4-0"
+       inkscape:connector-curvature="0" />
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       ns0:preamble="/home/jmmauricio-s/preamble_beamer.tex"
+       ns0:text="$$ \\sf  \\underline U_{mt}^f$$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.125,0,0,-1.125,-359.105,1265.8426)"
+       id="content"><path
+         id="path58230"
+         d="m 393.23,714.02 h -0.77 v -4.59 c 0,-1.31 -0.84,-1.97 -1.67,-1.97 -0.82,0 -1.64,0.63 -1.64,1.97 v 4.59 h -0.88 v -4.58 c 0,-1.45 1.16,-2.53 2.51,-2.53 1.33,0 2.45,1.09 2.45,2.53 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><line
+         id="line58232"
+         y2="705.72998"
+         x2="394.17999"
+         y1="705.72998"
+         x1="387.32999"
+         style="stroke-width:0.398" /><path
+         id="path58234"
+         d="m 395.51,714.23 h 0.79 v 0.44 h -0.82 v 0.8 c 0,0.48 0.44,0.55 0.67,0.55 0.15,0 0.34,-0.02 0.6,-0.12 v 0.51 c -0.18,0.04 -0.4,0.07 -0.59,0.07 -0.72,0 -1.24,-0.52 -1.24,-1.21 v -0.6 h -0.53 v -0.44 h 0.53 v -2.65 h 0.59 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><path
+         id="path58236"
+         d="m 399.48,706.69 0,0.05 -0.01,0.05 0,0.06 0,0.05 -0.01,0.05 0,0.05 -0.01,0.05 -0.01,0.04 -0.01,0.05 -0.02,0.05 -0.01,0.04 -0.02,0.05 -0.02,0.04 -0.02,0.05 -0.02,0.04 -0.03,0.04 -0.03,0.03 -0.03,0.04 -0.04,0.03 -0.03,0.04 -0.04,0.03 -0.05,0.03 -0.04,0.02 -0.05,0.03 -0.05,0.02 -0.06,0.02 -0.03,0.01 -0.03,0 -0.03,0.01 -0.03,0.01 -0.03,0 -0.04,0.01 -0.03,0 -0.04,0.01 -0.04,0 -0.03,0 -0.04,0 -0.04,0 c -0.59,0 -0.95,-0.34 -1.11,-0.56 -0.08,0.19 -0.25,0.56 -0.95,0.56 -0.39,0 -0.78,-0.16 -1.08,-0.53 v 0.51 h -0.56 v -3.13 h 0.61 v 1.69 c 0,0.45 0.19,1 0.73,1 0.72,0 0.72,-0.48 0.72,-0.68 v -2.01 h 0.6 v 1.69 c 0,0.45 0.2,1 0.73,1 0.72,0 0.72,-0.48 0.72,-0.68 v -2.01 h 0.61 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><path
+         id="path58238"
+         d="m 401.38,707.28 h 1.03 v 0.44 h -1.03 v 0.89 h -0.54 v -0.89 h -0.63 v -0.44 h 0.61 v -1.75 c 0,-0.47 0.12,-0.96 0.62,-0.96 0.5,0 0.88,0.15 1.09,0.25 l -0.11,0.45 c -0.24,-0.17 -0.48,-0.23 -0.67,-0.23 -0.3,0 -0.37,0.29 -0.37,0.61 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /></g>    <path
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path8838-0-1"
+       d="m 165,442.36218 -6.14132,25 3.07066,0 -6.14131,25"
+       style="fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7868-5)" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:0.99999988px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 116.4397,392.3622 -15,0"
+       id="path70952-9-51-8-1-0-3-8"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:1.00487924;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 156.4397,392.3622 -10,0"
+       id="path70952-9-5-4-3-6-5-2-6"
+       inkscape:connector-curvature="0" />
+    <g
+       transform="matrix(0,1.25,-1.5,0,719.98301,304.8622)"
+       id="g16140-4-8-6-0"
+       style="fill:#ffffff">
+      <rect
+         style="color:#000000;fill:#ffffff;stroke:#000000;stroke-width:0.73029679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect15342-9-7-7-8"
+         width="4.8000002"
+         height="16.000031"
+         x="67.599998"
+         y="384.36218"
+         rx="4.4346442"
+         ry="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,384.36216 0,-2"
+         id="path16136-0-7-3-6"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,400.36218 0,2"
+         id="path16138-4-9-6-9"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g18217-6"
+       transform="matrix(1.125,0,0,-1.125,-312.69924,1178.6725)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$$ \\sf \\underline Z_{red}$$"
+       ns0:preamble="/home/jmmauricio-s/preamble_beamer.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"><path
+         d="m 392.68,713.61 v 0.41 h -4.82 v -0.62 h 1.99 c 0.12,0 0.23,0.01 0.35,0.01 h 1.36 l -3.83,-5.86 v -0.43 h 5.01 v 0.66 h -0.95 c -0.87,0 -1.75,-0.02 -2.62,-0.02 h -0.32 z"
+         id="path18219-5"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><line
+         x1="387.17001"
+         y1="705.72998"
+         x2="393.26001"
+         y2="705.72998"
+         id="line18221-3"
+         style="stroke-width:0.398" /><path
+         d="m 394.43,706.12 0.01,0.07 0,0.06 0.01,0.07 0.01,0.06 0.02,0.06 0.02,0.06 0.02,0.06 0.02,0.05 0.03,0.06 0.03,0.05 0.03,0.05 0.04,0.04 0.03,0.05 0.04,0.04 0.04,0.04 0.05,0.04 0.04,0.03 0.05,0.03 0.04,0.04 0.05,0.02 0.05,0.03 0.06,0.03 0.05,0.02 0.05,0.02 0.06,0.02 0.05,0.01 0.06,0.01 0.06,0.02 0.05,0 0.06,0.01 0.06,0.01 0.05,0 v 0.51 c -0.58,-0.01 -1,-0.29 -1.28,-0.66 v 0.64 h -0.54 v -3.13 h 0.58 z"
+         id="path18223-2"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><path
+         d="m 398.78,705.39 -0.03,-0.02 -0.04,-0.03 -0.04,-0.02 -0.03,-0.02 -0.04,-0.02 -0.04,-0.02 -0.04,-0.02 -0.03,-0.02 -0.04,-0.02 -0.04,-0.02 -0.04,-0.01 -0.04,-0.02 -0.03,-0.01 -0.04,-0.01 -0.07,-0.03 -0.08,-0.02 -0.07,-0.01 -0.07,-0.02 -0.07,-0.01 -0.06,-0.01 -0.03,0 -0.04,0 -0.03,0 -0.03,0 -0.03,-0.01 -0.03,0 c -0.6,0 -1.06,0.5 -1.08,1.14 l 0.05,0.42 c 0.16,0.55 0.57,0.79 0.92,0.79 0.3,0 0.76,-0.15 0.89,-0.79 h -1.81 l -0.05,-0.42 h 2.28 c 0,0.32 -0.03,0.78 -0.3,1.18 -0.25,0.36 -0.67,0.49 -1.01,0.49 -0.85,0 -1.51,-0.75 -1.51,-1.63 0,-0.89 0.7,-1.63 1.62,-1.63 0.4,0 0.82,0.11 1.18,0.33 z"
+         id="path18225-5"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><path
+         d="m 402.31,709.46 h -0.59 v -2.04 l -0.02,-0.44 v -1.48 c -0.17,-0.29 -0.44,-0.48 -0.77,-0.48 -0.49,0 -0.99,0.34 -0.99,1.15 0,0.87 0.59,1.16 1.06,1.16 0.28,0 0.52,-0.11 0.7,-0.35 l 0.02,0.44 c -0.44,0.33 -0.9,0.37 -1.1,0.37 -0.73,0 -1.29,-0.73 -1.29,-1.61 0,-0.88 0.55,-1.61 1.27,-1.61 0.43,0 0.84,0.19 1.1,0.43 v -0.36 h 0.61 z"
+         id="path18227-2"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /></g>    <g
+       style="fill:#ffffff"
+       transform="matrix(0,1.25,-1.5,0,759.98301,304.86218)"
+       id="g16140-4-8-6-6-5">
+      <rect
+         style="color:#000000;fill:#ffffff;stroke:#000000;stroke-width:0.73029679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect15342-9-7-7-5-2"
+         width="4.8000002"
+         height="16.000031"
+         x="67.599998"
+         y="384.36218"
+         rx="4.4346442"
+         ry="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,384.36216 0,-2"
+         id="path16136-0-7-3-5-87"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,400.36218 0,2"
+         id="path16138-4-9-6-0-86"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       ns0:preamble="/home/jmmauricio-s/preamble_beamer.tex"
+       ns0:text="$$ \\sf \\underline Z_{t}$$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.125,0,0,-1.125,-272.75019,1178.6725)"
+       id="g24357-5"><path
+         id="path24359-7"
+         d="m 396.17,713.61 v 0.41 h -4.83 v -0.62 h 1.99 c 0.12,0 0.24,0.01 0.36,0.01 h 1.36 l -3.84,-5.86 v -0.43 h 5.02 v 0.66 h -0.96 c -0.86,0 -1.75,-0.02 -2.61,-0.02 h -0.32 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><line
+         id="line24361-3"
+         y2="705.72998"
+         x2="396.73999"
+         y1="705.72998"
+         x1="390.66"
+         style="stroke-width:0.398" /><path
+         id="path24363-9"
+         d="m 398.05,707.28 h 1.03 v 0.44 h -1.03 v 0.89 h -0.53 v -0.89 h -0.64 v -0.44 h 0.62 v -1.75 c 0,-0.47 0.12,-0.96 0.62,-0.96 0.5,0 0.88,0.15 1.09,0.25 l -0.12,0.45 c -0.23,-0.17 -0.47,-0.23 -0.67,-0.23 -0.29,0 -0.37,0.29 -0.37,0.61 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /></g>    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:1.00487924;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 196.4397,392.36218 -10,0"
+       id="path70952-9-5-4-3-6-5-2-1-2"
+       inkscape:connector-curvature="0" />
+    <g
+       style="fill:#ffffff"
+       transform="matrix(0,1.25,-1.5,0,799.98311,304.86215)"
+       id="g16140-4-8-6-6-0-4">
+      <rect
+         style="color:#000000;fill:#ffffff;stroke:#000000;stroke-width:0.73029679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect15342-9-7-7-5-7-1"
+         width="4.8000002"
+         height="16.000031"
+         x="67.599998"
+         y="384.36218"
+         rx="4.4346442"
+         ry="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,384.36216 0,-2"
+         id="path16136-0-7-3-5-8-3"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,400.36218 0,2"
+         id="path16138-4-9-6-0-8-5"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:1.00487924;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 236.4397,392.36218 -10,0"
+       id="path70952-9-5-4-3-6-5-2-7-2"
+       inkscape:connector-curvature="0" />
+    <g
+       style="fill:#ffffff"
+       transform="matrix(0,1.25,-1.5,0,839.98311,304.86215)"
+       id="g16140-4-8-6-6-7-1">
+      <rect
+         style="color:#000000;fill:#ffffff;stroke:#000000;stroke-width:0.73029679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect15342-9-7-7-5-8-4"
+         width="4.8000002"
+         height="16.000031"
+         x="67.599998"
+         y="384.36218"
+         rx="4.4346442"
+         ry="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,384.36216 0,-2"
+         id="path16136-0-7-3-5-9-6"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,400.36218 0,2"
+         id="path16138-4-9-6-0-3-9"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:1.00487924;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 276.4397,392.36219 -10,0"
+       id="path70952-9-5-4-3-6-5-2-7-4-3"
+       inkscape:connector-curvature="0" />
+    <g
+       style="fill:#ffffff"
+       transform="matrix(0,1.25,-1.5,0,879.98321,304.86215)"
+       id="g16140-4-8-6-6-7-8-7">
+      <rect
+         style="color:#000000;fill:#ffffff;stroke:#000000;stroke-width:0.73029679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect15342-9-7-7-5-8-7-7"
+         width="4.8000002"
+         height="16.000031"
+         x="67.599998"
+         y="384.36218"
+         rx="4.4346442"
+         ry="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,384.36216 0,-2"
+         id="path16136-0-7-3-5-9-3-9"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,400.36218 0,2"
+         id="path16138-4-9-6-0-3-4-8"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g30532-5"
+       transform="matrix(1.125,0,0,-1.125,-232.56447,1178.6725)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$$ \\sf \\underline Z_{l1}$$"
+       ns0:preamble="/home/jmmauricio-s/preamble_beamer.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"><path
+         style="fill:#000000;stroke-width:0"
+         inkscape:connector-curvature="0"
+         d="m 394.77,713.61 v 0.41 h -4.83 v -0.62 h 1.99 c 0.12,0 0.24,0.01 0.36,0.01 h 1.36 l -3.83,-5.86 v -0.43 h 5.01 v 0.66 h -0.96 c -0.86,0 -1.75,-0.02 -2.61,-0.02 h -0.32 z"
+         id="path30534-6" /><line
+         style="stroke-width:0.398"
+         x1="389.26001"
+         y1="705.72998"
+         x2="395.35001"
+         y2="705.72998"
+         id="line30536-1" /><polygon
+         style="fill:#000000;stroke-width:0"
+         points="396.52,704.64 396.52,709.46 395.93,709.46 395.93,704.64 "
+         id="polygon30538-7" /><path
+         style="fill:#000000;stroke-width:0"
+         inkscape:connector-curvature="0"
+         d="m 399.35,709.34 h -0.15 c -0.46,-0.42 -1.03,-0.44 -1.44,-0.46 v -0.43 c 0.27,0 0.61,0.02 0.96,0.16 v -3.54 h -0.92 v -0.43 h 2.48 v 0.43 h -0.93 z"
+         id="path30540-4" /></g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       ns0:preamble="/home/jmmauricio-s/preamble_beamer.tex"
+       ns0:text="$$ \\sf \\underline Z_{l2}$$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.125,0,0,-1.125,-192.65447,1178.6725)"
+       id="g36642-6"><path
+         style="fill:#000000;stroke-width:0"
+         inkscape:connector-curvature="0"
+         id="path36644-4"
+         d="m 394.77,713.61 v 0.41 h -4.83 v -0.62 h 1.99 c 0.12,0 0.24,0.01 0.36,0.01 h 1.36 l -3.83,-5.86 v -0.43 h 5.01 v 0.66 h -0.96 c -0.86,0 -1.75,-0.02 -2.61,-0.02 h -0.32 z" /><line
+         style="stroke-width:0.398"
+         id="line36646-6"
+         y2="705.72998"
+         x2="395.35001"
+         y1="705.72998"
+         x1="389.26001" /><polygon
+         style="fill:#000000;stroke-width:0"
+         id="polygon36648-4"
+         points="396.52,704.64 396.52,709.46 395.93,709.46 395.93,704.64 " /><path
+         style="fill:#000000;stroke-width:0"
+         inkscape:connector-curvature="0"
+         id="path36650-2"
+         d="m 399.08,705.17 -0.03,0 -0.03,0 -0.03,0 -0.03,0 -0.03,0 -0.03,-0.01 -0.03,0 -0.04,0 h -0.79 l 1.08,0.96 c 0.12,0.11 0.47,0.36 0.6,0.48 0.3,0.27 0.72,0.64 0.72,1.24 0,0.79 -0.59,1.5 -1.58,1.5 -0.74,0 -1.2,-0.39 -1.44,-1.1 l 0.33,-0.41 c 0.16,0.58 0.4,1.03 1.01,1.03 0.58,0 1.03,-0.41 1.03,-1.03 0,-0.58 -0.34,-0.91 -0.76,-1.3 -0.14,-0.14 -0.52,-0.46 -0.66,-0.6 -0.2,-0.18 -0.69,-0.64 -0.89,-0.82 v -0.47 h 2.96 v 0.53 z" /></g>    <g
+       id="g42717-4"
+       transform="matrix(1.125,0,0,-1.125,-152.75,1178.6725)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$$ \\sf \\underline Z_{ct}$$"
+       ns0:preamble="/home/jmmauricio-s/preamble_beamer.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"><path
+         style="fill:#000000;stroke-width:0"
+         inkscape:connector-curvature="0"
+         d="m 394.52,713.61 v 0.41 h -4.82 v -0.62 h 1.99 c 0.12,0 0.23,0.01 0.35,0.01 h 1.36 l -3.83,-5.86 v -0.43 h 5.01 v 0.66 h -0.95 c -0.87,0 -1.75,-0.02 -2.62,-0.02 h -0.32 z"
+         id="path42719-3" /><line
+         style="stroke-width:0.398"
+         x1="389.01001"
+         y1="705.72998"
+         x2="395.10001"
+         y2="705.72998"
+         id="line42721-7" /><path
+         style="fill:#000000;stroke-width:0"
+         inkscape:connector-curvature="0"
+         d="m 398.13,705.39 -0.07,-0.04 -0.06,-0.04 -0.07,-0.03 -0.07,-0.04 -0.07,-0.03 -0.07,-0.03 -0.07,-0.02 -0.07,-0.02 -0.07,-0.03 -0.08,-0.01 -0.07,-0.02 -0.08,-0.01 -0.07,-0.01 -0.08,-0.01 -0.08,0 -0.08,-0.01 c -0.64,0 -1.02,0.52 -1.02,1.15 0,0.53 0.28,1.16 1.04,1.16 0.48,0 0.7,-0.1 1.05,-0.32 l 0.09,0.5 c -0.41,0.21 -0.59,0.3 -1.14,0.3 -1.04,0 -1.64,-0.85 -1.64,-1.65 0,-0.85 0.67,-1.61 1.61,-1.61 0.49,0 0.91,0.14 1.21,0.32 z"
+         id="path42723-2" /><path
+         style="fill:#000000;stroke-width:0"
+         inkscape:connector-curvature="0"
+         d="m 399.7,707.28 h 1.03 v 0.44 h -1.03 v 0.89 h -0.54 v -0.89 h -0.63 v -0.44 h 0.61 v -1.75 c 0,-0.47 0.12,-0.96 0.62,-0.96 0.5,0 0.89,0.15 1.1,0.25 l -0.12,0.45 c -0.23,-0.17 -0.48,-0.23 -0.67,-0.23 -0.29,0 -0.37,0.29 -0.37,0.61 z"
+         id="path42725-6" /></g>    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:1.00487924;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 316.4397,392.36218 -10,0"
+       id="path70952-9-5-4-3-6-5-2-7-4-0-8"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g58813"
+       transform="matrix(1.125,0,0,-1.125,-304.13894,1228.6725)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$$ \\sf \\underline Z_{eq}$$"
+       ns0:preamble="/home/jmmauricio-s/preamble_beamer.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"><path
+         d="m 393.95,713.61 v 0.41 h -4.83 v -0.62 h 1.99 c 0.12,0 0.24,0.01 0.36,0.01 h 1.35 l -3.83,-5.86 v -0.43 h 5.02 v 0.66 h -0.96 c -0.86,0 -1.75,-0.02 -2.62,-0.02 h -0.31 z"
+         id="path58815"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><line
+         x1="388.42999"
+         y1="705.72998"
+         x2="394.51999"
+         y2="705.72998"
+         id="line58817"
+         style="stroke-width:0.398" /><path
+         d="m 397.52,705.39 -0.04,-0.02 -0.04,-0.03 -0.03,-0.02 -0.04,-0.02 -0.04,-0.02 -0.04,-0.02 -0.03,-0.02 -0.04,-0.02 -0.04,-0.02 -0.04,-0.02 -0.03,-0.01 -0.04,-0.02 -0.04,-0.01 -0.04,-0.01 -0.07,-0.03 -0.07,-0.02 -0.07,-0.01 -0.07,-0.02 -0.07,-0.01 -0.07,-0.01 -0.03,0 -0.03,0 -0.03,0 -0.03,0 -0.03,-0.01 -0.03,0 c -0.61,0 -1.07,0.5 -1.09,1.14 l 0.05,0.42 c 0.16,0.55 0.57,0.79 0.92,0.79 0.31,0 0.76,-0.15 0.89,-0.79 h -1.81 l -0.05,-0.42 h 2.29 c 0,0.32 -0.04,0.78 -0.31,1.18 -0.25,0.36 -0.67,0.49 -1.01,0.49 -0.85,0 -1.5,-0.75 -1.5,-1.63 0,-0.89 0.69,-1.63 1.61,-1.63 0.41,0 0.82,0.11 1.18,0.33 z"
+         id="path58819"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><path
+         d="m 401.04,707.79 h -0.58 v -0.46 c -0.26,0.27 -0.62,0.46 -1.03,0.46 -0.74,0 -1.36,-0.69 -1.36,-1.62 0,-0.87 0.53,-1.6 1.22,-1.6 0.24,0 0.71,0.05 1.14,0.41 l 0.03,0.51 c -0.26,-0.39 -0.59,-0.47 -0.79,-0.47 -0.56,0 -1,0.53 -1,1.15 0,0.68 0.53,1.14 1.07,1.14 0.46,0 0.72,-0.45 0.72,-0.74 v -1.08 l -0.03,-0.51 v -1.69 h 0.61 z"
+         id="path58821"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /></g>    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+       style="fill:none;stroke:#000000;stroke-width:1.00487924;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 175,442.36218 -10,0"
+       id="path70952-9-5-4-3-6-5-2-62"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g58813-0"
+       transform="matrix(1.125,0,0,-1.125,-253.23375,1228.6725)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$$ \\sf \\underline Z_{eq}$$"
+       ns0:preamble="/home/jmmauricio-s/preamble_beamer.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"><path
+         d="m 393.95,713.61 v 0.41 h -4.83 v -0.62 h 1.99 c 0.12,0 0.24,0.01 0.36,0.01 h 1.35 l -3.83,-5.86 v -0.43 h 5.02 v 0.66 h -0.96 c -0.86,0 -1.75,-0.02 -2.62,-0.02 h -0.31 z"
+         id="path58815-2"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><line
+         x1="388.42999"
+         y1="705.72998"
+         x2="394.51999"
+         y2="705.72998"
+         id="line58817-7"
+         style="stroke-width:0.398" /><path
+         d="m 397.52,705.39 -0.04,-0.02 -0.04,-0.03 -0.03,-0.02 -0.04,-0.02 -0.04,-0.02 -0.04,-0.02 -0.03,-0.02 -0.04,-0.02 -0.04,-0.02 -0.04,-0.02 -0.03,-0.01 -0.04,-0.02 -0.04,-0.01 -0.04,-0.01 -0.07,-0.03 -0.07,-0.02 -0.07,-0.01 -0.07,-0.02 -0.07,-0.01 -0.07,-0.01 -0.03,0 -0.03,0 -0.03,0 -0.03,0 -0.03,-0.01 -0.03,0 c -0.61,0 -1.07,0.5 -1.09,1.14 l 0.05,0.42 c 0.16,0.55 0.57,0.79 0.92,0.79 0.31,0 0.76,-0.15 0.89,-0.79 h -1.81 l -0.05,-0.42 h 2.29 c 0,0.32 -0.04,0.78 -0.31,1.18 -0.25,0.36 -0.67,0.49 -1.01,0.49 -0.85,0 -1.5,-0.75 -1.5,-1.63 0,-0.89 0.69,-1.63 1.61,-1.63 0.41,0 0.82,0.11 1.18,0.33 z"
+         id="path58819-4"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><path
+         d="m 401.04,707.79 h -0.58 v -0.46 c -0.26,0.27 -0.62,0.46 -1.03,0.46 -0.74,0 -1.36,-0.69 -1.36,-1.62 0,-0.87 0.53,-1.6 1.22,-1.6 0.24,0 0.71,0.05 1.14,0.41 l 0.03,0.51 c -0.26,-0.39 -0.59,-0.47 -0.79,-0.47 -0.56,0 -1,0.53 -1,1.15 0,0.68 0.53,1.14 1.07,1.14 0.46,0 0.72,-0.45 0.72,-0.74 v -1.08 l -0.03,-0.51 v -1.69 h 0.61 z"
+         id="path58821-3"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /></g>    <g
+       transform="matrix(-1,0,0,1,500,-1.9885254e-5)"
+       id="g59064">
+      <path
+         inkscape:connector-curvature="0"
+         id="path70952-86-9-8-0-1-4"
+         d="m 270,452.3622 0,-10"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path70952-9-51-8-1-0-3-1"
+         d="m 285,442.3622 -15,0"
+         style="fill:none;stroke:#000000;stroke-width:0.99999988px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path70952-8-1-0-6-0-8-4"
+         d="m 270,492.3622 0,-10"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <g
+         id="g16145-1-7-5-4-4-3-7"
+         transform="translate(225.00001,75.00001)"
+         inkscape:export-filename="/mnt/windows/Documents/public/jmmauricio6/EVOLUTION/webpage/source/tutorials/pyctrl/circuit_rl/png/circ_rl.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300">
+        <g
+           id="g15315-0-3-8-1-0-9-0"
+           transform="translate(-35,2.6171874e-6)">
+          <path
+             d="m 70,392.35988 c 0,5.52061 4.477217,10.0023 9.999424,10.0023 5.522209,0 10.000576,-4.48169 10.000576,-10.0023 0,-5.52062 -4.478367,-9.9977 -10.000576,-9.9977 -5.522207,0 -9.999424,4.47708 -9.999424,9.9977"
+             style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6;stroke-opacity:1;stroke-dasharray:none;display:inline"
+             id="path70904-5-8-2-24-9-2-3"
+             inkscape:connector-curvature="0" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path15311-4-6-4-6-5-1-6"
+             d="m 80,382.36218 0,-5"
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path15313-5-6-6-4-3-2-8"
+             d="m 80,402.36218 0,5"
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          <g
+             id="g70398-5-0-6-2-0-1-8"
+             transform="matrix(1.1522065,0,0,1.25,67.784307,75.27218)">
+            <path
+               d="m 14.941,253.672 c -4.339,13.019 -4.339,-13.024 -8.679,0"
+               style="fill:none;stroke:#000000;stroke-width:0.83325869;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6;stroke-opacity:1;stroke-dasharray:none"
+               id="path70400-1-4-1-2-3-6-4"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       ns0:preamble="/home/jmmauricio-s/preamble_beamer.tex"
+       ns0:text="$$ \\sf  \\underline U_{mt}^f$$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.125,0,0,-1.125,-189.105,1265.8426)"
+       id="content-2"><path
+         id="path58230-7"
+         d="m 393.23,714.02 h -0.77 v -4.59 c 0,-1.31 -0.84,-1.97 -1.67,-1.97 -0.82,0 -1.64,0.63 -1.64,1.97 v 4.59 h -0.88 v -4.58 c 0,-1.45 1.16,-2.53 2.51,-2.53 1.33,0 2.45,1.09 2.45,2.53 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><line
+         id="line58232-8"
+         y2="705.72998"
+         x2="394.17999"
+         y1="705.72998"
+         x1="387.32999"
+         style="stroke-width:0.398" /><path
+         id="path58234-0"
+         d="m 395.51,714.23 h 0.79 v 0.44 h -0.82 v 0.8 c 0,0.48 0.44,0.55 0.67,0.55 0.15,0 0.34,-0.02 0.6,-0.12 v 0.51 c -0.18,0.04 -0.4,0.07 -0.59,0.07 -0.72,0 -1.24,-0.52 -1.24,-1.21 v -0.6 h -0.53 v -0.44 h 0.53 v -2.65 h 0.59 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><path
+         id="path58236-1"
+         d="m 399.48,706.69 0,0.05 -0.01,0.05 0,0.06 0,0.05 -0.01,0.05 0,0.05 -0.01,0.05 -0.01,0.04 -0.01,0.05 -0.02,0.05 -0.01,0.04 -0.02,0.05 -0.02,0.04 -0.02,0.05 -0.02,0.04 -0.03,0.04 -0.03,0.03 -0.03,0.04 -0.04,0.03 -0.03,0.04 -0.04,0.03 -0.05,0.03 -0.04,0.02 -0.05,0.03 -0.05,0.02 -0.06,0.02 -0.03,0.01 -0.03,0 -0.03,0.01 -0.03,0.01 -0.03,0 -0.04,0.01 -0.03,0 -0.04,0.01 -0.04,0 -0.03,0 -0.04,0 -0.04,0 c -0.59,0 -0.95,-0.34 -1.11,-0.56 -0.08,0.19 -0.25,0.56 -0.95,0.56 -0.39,0 -0.78,-0.16 -1.08,-0.53 v 0.51 h -0.56 v -3.13 h 0.61 v 1.69 c 0,0.45 0.19,1 0.73,1 0.72,0 0.72,-0.48 0.72,-0.68 v -2.01 h 0.6 v 1.69 c 0,0.45 0.2,1 0.73,1 0.72,0 0.72,-0.48 0.72,-0.68 v -2.01 h 0.61 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><path
+         id="path58238-4"
+         d="m 401.38,707.28 h 1.03 v 0.44 h -1.03 v 0.89 h -0.54 v -0.89 h -0.63 v -0.44 h 0.61 v -1.75 c 0,-0.47 0.12,-0.96 0.62,-0.96 0.5,0 0.88,0.15 1.09,0.25 l -0.11,0.45 c -0.24,-0.17 -0.48,-0.23 -0.67,-0.23 -0.3,0 -0.37,0.29 -0.37,0.61 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /></g>    <g
+       id="g58813-4"
+       transform="matrix(1.125,0,0,-1.125,-390.40375,1173.5922)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$$ \\sf \\underline Z_{eq}$$"
+       ns0:preamble="/home/jmmauricio-s/preamble_beamer.tex"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"><path
+         d="m 393.95,713.61 v 0.41 h -4.83 v -0.62 h 1.99 c 0.12,0 0.24,0.01 0.36,0.01 h 1.35 l -3.83,-5.86 v -0.43 h 5.02 v 0.66 h -0.96 c -0.86,0 -1.75,-0.02 -2.62,-0.02 h -0.31 z"
+         id="path58815-3"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><line
+         x1="388.42999"
+         y1="705.72998"
+         x2="394.51999"
+         y2="705.72998"
+         id="line58817-1"
+         style="stroke-width:0.398" /><path
+         d="m 397.52,705.39 -0.04,-0.02 -0.04,-0.03 -0.03,-0.02 -0.04,-0.02 -0.04,-0.02 -0.04,-0.02 -0.03,-0.02 -0.04,-0.02 -0.04,-0.02 -0.04,-0.02 -0.03,-0.01 -0.04,-0.02 -0.04,-0.01 -0.04,-0.01 -0.07,-0.03 -0.07,-0.02 -0.07,-0.01 -0.07,-0.02 -0.07,-0.01 -0.07,-0.01 -0.03,0 -0.03,0 -0.03,0 -0.03,0 -0.03,-0.01 -0.03,0 c -0.61,0 -1.07,0.5 -1.09,1.14 l 0.05,0.42 c 0.16,0.55 0.57,0.79 0.92,0.79 0.31,0 0.76,-0.15 0.89,-0.79 h -1.81 l -0.05,-0.42 h 2.29 c 0,0.32 -0.04,0.78 -0.31,1.18 -0.25,0.36 -0.67,0.49 -1.01,0.49 -0.85,0 -1.5,-0.75 -1.5,-1.63 0,-0.89 0.69,-1.63 1.61,-1.63 0.41,0 0.82,0.11 1.18,0.33 z"
+         id="path58819-9"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><path
+         d="m 401.04,707.79 h -0.58 v -0.46 c -0.26,0.27 -0.62,0.46 -1.03,0.46 -0.74,0 -1.36,-0.69 -1.36,-1.62 0,-0.87 0.53,-1.6 1.22,-1.6 0.24,0 0.71,0.05 1.14,0.41 l 0.03,0.51 c -0.26,-0.39 -0.59,-0.47 -0.79,-0.47 -0.56,0 -1,0.53 -1,1.15 0,0.68 0.53,1.14 1.07,1.14 0.46,0 0.72,-0.45 0.72,-0.74 v -1.08 l -0.03,-0.51 v -1.69 h 0.61 z"
+         id="path58821-2"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /></g>    <g
+       transform="matrix(0,1.25,-1.5,0,642.37324,304.86218)"
+       id="g16140-4-8-6-5"
+       style="fill:#ffffff">
+      <rect
+         style="color:#000000;fill:#ffffff;stroke:#000000;stroke-width:0.73029679;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect15342-9-7-7-5"
+         width="4.8000002"
+         height="16.000031"
+         x="67.599998"
+         y="384.36218"
+         rx="4.4346442"
+         ry="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,384.36216 0,-2"
+         id="path16136-0-7-3-1"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.73029673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 70,400.36218 0,2"
+         id="path16138-4-9-6-3"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       ns0:preamble="/home/jmmauricio-s/preamble_beamer.tex"
+       ns0:text="$$ \\sf =$$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.125,0,0,-1.125,-360.75375,1190.9784)"
+       id="g59293"><path
+         id="path59295"
+         d="m 399.63,710.37 0.03,0 0.03,0 0.03,0 0.01,0.01 0.02,0 0.01,0 0.02,0 0.01,0 0.01,0 0.02,0.01 0.01,0 0.01,0 0.02,0.01 0.01,0 0.01,0.01 0.01,0 0.01,0.01 0.01,0.01 0.01,0.01 0.01,0.01 0.01,0.01 0,0 0.01,0.01 0,0 0,0.01 0,0.01 0.01,0 0,0.01 0,0.01 0,0 0.01,0.01 0,0.01 0,0.01 0,0.01 0,0 0,0.01 0,0.01 c 0,0.2 -0.19,0.2 -0.33,0.2 h -5.96 c -0.14,0 -0.33,0 -0.33,-0.2 0,-0.2 0.19,-0.2 0.34,-0.2 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /><path
+         id="path59297"
+         d="m 399.64,708.45 0.02,0 0.01,0 0.03,0 0.02,0 0.02,0 0.01,0 0.02,0 0.01,0 0.01,0 0.02,0.01 0.01,0 0.01,0 0.02,0.01 0.01,0 0.01,0.01 0.01,0 0.01,0.01 0.01,0 0.01,0.01 0.01,0.01 0.01,0.01 0,0 0.01,0.01 0,0.01 0.01,0 0,0.01 0,0 0,0.01 0.01,0.01 0,0 0,0.01 0,0.01 0.01,0 0,0.01 0,0.01 0,0.01 0,0.01 0,0.01 0,0.01 c 0,0.19 -0.19,0.19 -0.34,0.19 h -5.94 c -0.15,0 -0.34,0 -0.34,-0.19 0,-0.2 0.19,-0.2 0.33,-0.2 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke-width:0" /></g>  </g>
+</svg>

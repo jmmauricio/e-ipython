@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://rawgit.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.css">
+   <script src="https://rawgithub.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.js"></script>
+
+
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css">
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css">
+   <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+
+   <link rel="stylesheet" href="http://birdage.github.io/Leaflet.awesome-markers/dist/leaflet.awesome.rotate.css">
+
+   <script src="https://wrobstory.github.io/leaflet-dvf/leaflet-dvf.markers.min.js"></script>
+   
+   
+   
+
+   <style>
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+      }
+
+   </style>
+</head>
+
+<body>
+
+   <div class="folium-map" id="folium_8e747cb1e8be4310a7a601d51b483863" style="width: 960px; height: 500px"></div>
+
+   <script>
+
+      
+
+      var base_tile = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 18,
+          attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+      });
+
+      var baseLayer = {        
+        "Base Layer": base_tile
+      };
+
+      /*
+      addition of the wms layers
+      */ 
+
+      
+      
+      /*
+      addition of the tile layers
+      */
+      
+
+      /*
+      list of layers to be added
+      */ 
+      var layer_list = {
+      
+      };
+
+      /*
+      Creates the map and adds the selected layers
+      */
+      var map = L.map('folium_8e747cb1e8be4310a7a601d51b483863', {
+                                       center:[45.5236, -122.675],
+                                       zoom: 13,
+                                       layers: [base_tile]
+                                     });
+
+      L.control.layers(baseLayer, layer_list).addTo(map);
+
+      //cluster group
+      var clusteredmarkers = L.markerClusterGroup();
+      //section for adding clustered markers
+      
+      //add the clustered markers to the group anyway
+      map.addLayer(clusteredmarkers);
+
+      
+
+      
+      var polygon_1 = new L.RegularPolygonMarker(new L.LatLng(45.5012, -122.6655), {
+    color: 'black',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#132b5e',
+    fillOpacity: 1,
+    numberOfSides: 3,
+    rotation: 0,
+    radius: 10
+});
+      polygon_1.bindPopup("Ross Island Bridge");
+      map.addLayer(polygon_1)
+      
+      var polygon_2 = new L.RegularPolygonMarker(new L.LatLng(45.5132, -122.6708), {
+    color: 'black',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#45647d',
+    fillOpacity: 1,
+    numberOfSides: 4,
+    rotation: 0,
+    radius: 10
+});
+      polygon_2.bindPopup("Hawthorne Bridge");
+      map.addLayer(polygon_2)
+      
+      var polygon_3 = new L.RegularPolygonMarker(new L.LatLng(45.5275, -122.6692), {
+    color: 'black',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#769d96',
+    fillOpacity: 1,
+    numberOfSides: 6,
+    rotation: 0,
+    radius: 10
+});
+      polygon_3.bindPopup("Steel Bridge");
+      map.addLayer(polygon_3)
+      
+      var polygon_4 = new L.RegularPolygonMarker(new L.LatLng(45.5318, -122.6745), {
+    color: 'black',
+    opacity: 1,
+    weight: 2,
+    fillColor: '#769d96',
+    fillOpacity: 1,
+    numberOfSides: 8,
+    rotation: 0,
+    radius: 10
+});
+      polygon_4.bindPopup("Broadway Bridge");
+      map.addLayer(polygon_4)
+      
+
+      
+
+      
+
+      
+
+   </script>
+
+</body>

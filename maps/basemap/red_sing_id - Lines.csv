@@ -1,0 +1,17 @@
+digsilent name,substation i,terminal i,substation j,terminal j,osm way 1 id,osm way 2 id,osm way 3 id,osm way 4 id,osm way 5 id,osm way 6 id,observacion
+220 kV Crucero-Encuentro.C1,Crucero 220,  Crucero 220 B2,Encuentro 220,  Encuentro 220 B1,20183499,258169025,,,,,0
+220 kV Cóndores-Parinacota,,  Cóndores 220,,  Parinacota 220,88147669,,,,,,0
+220 kV Tarapacá-Cóndores,,  Tarapacá 220,,  Cóndores 220,110799766,,,,,,0
+220 kV Atacama-Encuentro.C2,Gas Atacama 220,  C. Atacama 2,Encuentro 220,  Encuentro 220 B2,120956960,30641638,,,,,0
+220 kV Atacama-Encuentro.C1,Gas Atacama 220,  C. Atacama 1,Encuentro 220,  Encuentro 220 B1,120956964,30641638,,,,,0
+220 kV Encuentro-Spence,Encuentro 220,  Encuentro 220 B1,,  Spence 220,169875160,,,,,,0
+220 kV Encuentro-Sierra Gorda.C1,Encuentro 220,  Encuentro 220 B1,Single Busbar with Tie,  Sierra Gorda 220 B1,169875161,,,,,,0
+220 kV Encuentro-Sierra Gorda.C2,Encuentro 220, - Encuentro 220 B2,Single Busbar with Tie,  Sierra Gorda 220 B2,169875161,,,,,,0
+220 kV Crucero-Lagunas N°2,Crucero 220, - Crucero 220 B2,Double Busbar,  Lagunas 220 kV B2,169998374,,,,,,duda
+220 kV Central Tocopilla,  Tocopilla 220 B1,,  tap off El Loa 7A,169998375,,,,,,duda
+220 kV Central Tocopilla,Tocopilla220,  Tocopilla 220 B2,,  tap off El Loa 6A,169998376,,,,,,duda
+220 kV Crucero-Encuentro.C2,Crucero 220,  Crucero 220 B1,Encuentro 220,  Encuentro 220 B2,258169026,258169025,,,,,0
+220 kV Lagunas-Collahuasi.C1,Collahuasi 220,  Collahuasi 220 B1,Double Busbar,  Lagunas 220 kV B1,274259013,182736383,182765481,182692489,,,duda
+220 kV Tarapacá-Lagunas.C1,,  Tarapacá 220,Double Busbar,  Lagunas 220 kV B1,274259014,,,,,,0
+220 kV Tarapacá-Lagunas.C2,Double Busbar,  Lagunas 220 kV B2,,  Tarapacá 220,274259014,,,,,,0
+220 kV Lagunas-Collahuasi.C2,Collahuasi 220,  Collahuasi 220 B1,Double Busbar,  Lagunas 220 kV B1,274259016,182736383,182765483,182692489,,,duda
