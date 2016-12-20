@@ -1,0 +1,20 @@
+params: {G_12: 5.0, B_12: 10.0, V_2: 1.0, theta_2: 0.0, 
+        P_1: 0.5, Q_1: 0.1}
+# y_1 = U = V1**2      
+# y_2 = K = V1*V2*cos(theta_1-theta_2)
+# y_3 = L = V1*V2*sin(theta_1-theta_2)
+ph:
+- {h: G12*V1**2 - G_12*V1*V2*cos(theta_1-theta_2) - B_12*V1*V2*sin(theta_1-theta_2) , 
+  hy: G12*y_1 - G_12*y_2 - B_12*y_2,
+   p: P_1}
+- {h: -B12*V1**2 + B_12*V1*V2*cos(theta_1-theta_2) - G_12*V1*V2*sin(theta_1-theta_2), 
+  hy: -B12*y_1 + B_12*y_2 - G_12*y_3,
+  p: Q_1}
+uyxa:
+- {u(a): a_1, u(x): V_1, u(y): ln(y_1), y(u): u_1}
+- {u(a): a_2, u(x): theta_1, u(y): ln(y_2**2 + y_3**2), y(u): -sqrt(u_3**2*exp(u_2))}
+- {u(a): a_3, u(x): V1*V2*cos(theta_1-theta_2), u(y): atan(y_3/y_2), y(u): sqrt((-u_3**2 + 1)*exp(u_2))}
+xa:
+- {a(x): 2*log(V_1), x: V_1, x(a): exp(a_1)**(1/2)}
+- {a(x): theta_1-theta_2, x: theta_1, x(a): a_2+theta_2}
+

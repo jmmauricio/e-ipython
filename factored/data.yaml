@@ -1,0 +1,21 @@
+params: {Domega_0: 0.0, Dt: 0.001, E_p: 1.0, H: 3.5, 
+        K_d: 0.5, Omega_b: 314.1592653589793,
+        P_m: 0.3, R_a: 0.01, V_h: 1.0, X: 0.4, 
+        X1d: 0.3, delta_0: 0.0, theta_h: 0.0}
+ph:
+- {h: delta - Dt * Omega_b * Domega, 
+  hy: y_1 - Dt * Omega_b * y_2, p: delta_0}
+- {h: Domega + Dt/(2*H)*p_e + Dt/(2*H)*K_d*Domega, 
+  hy: y_2 + Dt/(2*H)*y_3 + Dt/(2*H)*K_d*y_2,
+  p: Domega_0+Dt*P_m/(2*H)}
+- {h: -p_e + E_p*V_h/X1d*sin(delta), 
+  hy: -y_3 + E_p*V_h/X1d*y_4, p: '0'}
+uyxa:
+- {u(a): a_1, u(x): delta, u(y): y_1, y(u): u_1}
+- {u(a): a_2, u(x): Domega, u(y): y_2, y(u): u_2}
+- {u(a): a_3, u(x): p_e, u(y): y_3, y(u): u_3}
+- {u(a): a_1, u(x): delta, u(y): asin(y_4), y(u): sin(u_4)}
+xa:
+- {a(x): delta, x: delta, x(a): a_1}
+- {a(x): Domega, x: Domega, x(a): a_2}
+- {a(x): p_e, x: p_e, x(a): a_3}
