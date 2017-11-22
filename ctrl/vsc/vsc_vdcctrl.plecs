@@ -21,7 +21,11 @@ Plecs {
   StiffnessDetectionMsg "2"
   MaxConsecutiveZCs "1000"
   AssertionAction "1"
-  InitializationCommands ""
+  InitializationCommands "C_value = 2000.0e-6;\nS_cc = 1e6;\nU_b = 400;\nXR = "
+"0.5;\nR_value = 0.1;\nL_value = 1.0e-3;\nT_d_idq = 0.002;\nT_d_vdc = 0.01;\n"
+"\n\nZ_cc = U_b^2/S_cc;\n\n\n# Z**2 = R**2 + X**2;\n# Z**2 = R**2*XR**2 + R**2"
+" = R**2*(XR**2+1);\nR_g_val = (Z_cc**2/(XR**2+1))**0.5;\nX = XR*R_g_val;\nome"
+"ga_val = 2*pi*50;\n\nL_g_val =  X/omega_val;\n\n"
   InitialState  "1"
   SystemState   ""
   CodeGenTopologies "[]"
@@ -37,9 +41,9 @@ Plecs {
   ExtendedMatrixPrecision "1"
   MatrixSignificanceCheck "2"
   Schematic {
-    Location      [0, 25; 1920, 1011]
+    Location      [0, 25; 1648, 1011]
     ZoomFactor    1
-    SliderPosition [38, 0]
+    SliderPosition [351, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -64,7 +68,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "L"
-        Value         "2.5e-3"
+        Value         "L_value"
         Show          off
       }
       Parameter {
@@ -82,7 +86,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "L"
-        Value         "2.5e-3"
+        Value         "L_value"
         Show          off
       }
       Parameter {
@@ -100,7 +104,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "L"
-        Value         "2.5e-3"
+        Value         "L_value"
         Show          off
       }
       Parameter {
@@ -118,7 +122,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "R"
-        Value         "1"
+        Value         "R_value"
         Show          off
       }
     }
@@ -131,7 +135,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "R"
-        Value         "1"
+        Value         "R_value"
         Show          off
       }
     }
@@ -144,7 +148,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "R"
-        Value         "1"
+        Value         "R_value"
         Show          off
       }
     }
@@ -230,7 +234,7 @@ Plecs {
       Type          ThreePhaseVoltageSource
       Name          "V_3ph"
       Show          on
-      Position      [1090, 205]
+      Position      [1245, 205]
       Direction     down
       Flipped       on
       Parameter {
@@ -258,7 +262,7 @@ Plecs {
       Type          Ground
       Name          "Ground2"
       Show          off
-      Position      [1140, 245]
+      Position      [1295, 245]
       Direction     up
       Flipped       off
     }
@@ -306,7 +310,7 @@ Plecs {
       }
       Parameter {
         Variable      "Parameters"
-        Value         ""
+        Value         "R_value,L_value,T_d_idq"
         Show          off
       }
       Parameter {
@@ -324,14 +328,15 @@ Plecs {
         Value         "int ctrl_mode;\ndouble i_d_ref, i_q_ref;\ndouble u_d,u_"
 "q;\ndouble eta_d,eta_q;\ndouble v_sd,v_sq;\ndouble i_d,i_q;\ndouble xi_d,xi_q"
 ";\ndouble dxi_d,dxi_q;\ndouble error_d,error_q;\ndouble v_dc = 800.0;\ndouble"
-" R = 1.0;\ndouble L = 2.5e-3;\ndouble omega = 314.1592653589793;\n\ndouble T_"
-"d = 0.001;\ndouble K_p;\ndouble T_pi;\n\ndouble p_ref,q_ref;\ndouble den;\n"
+" R;  \ndouble L;\ndouble omega = 314.1592653589793;\n\ndouble T_d = 0.001;\nd"
+"ouble K_p;\ndouble T_pi;\n\ndouble p_ref,q_ref;\ndouble den;\n"
         Show          off
       }
       Parameter {
         Variable      "StartFcn"
-        Value         "// 0: open loop, 1:id-iq, 2:p-q\nctrl_mode = 2; \n\nK_p"
-" = L/T_d;\nT_pi = L/R;\n"
+        Value         "// 0: open loop, 1:id-iq, 2:p-q\nctrl_mode = 2; \n\nR ="
+" ParamRealData(0, 0);\nL = ParamRealData(1, 0);\nT_d = ParamRealData(2, 0);\n"
+"\nK_p = L/T_d;\nT_pi = L/R;\n"
         Show          off
       }
       Parameter {
@@ -586,7 +591,7 @@ Plecs {
       Type          Goto
       Name          "Goto3"
       Show          off
-      Position      [615, 815]
+      Position      [340, 730]
       Direction     right
       Flipped       off
       Parameter {
@@ -790,12 +795,12 @@ Plecs {
       }
       Parameter {
         Variable      "Before"
-        Value         "[0]"
+        Value         "[10e3]"
         Show          off
       }
       Parameter {
         Variable      "After"
-        Value         "[0]"
+        Value         "[10e3]"
         Show          off
       }
     }
@@ -856,7 +861,7 @@ Plecs {
       }
       Parameter {
         Variable      "Parameters"
-        Value         ""
+        Value         "T_d_vdc"
         Show          off
       }
       Parameter {
@@ -1025,11 +1030,11 @@ Plecs {
       Position      [825, 710]
       Direction     up
       Flipped       off
-      Location      [1, 25; 1919, 1034]
+      Location      [1, 703; 1919, 1032]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADIA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGQA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABkAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABGAP///wAAB34AAAPWAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABGAP///wAAB34AAAEuAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1042,7 +1047,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "0.001"
       SampleLimit   "0"
       XAxisLabel    ""
@@ -1173,7 +1178,7 @@ Plecs {
       Flipped       on
       Parameter {
         Variable      "C"
-        Value         "2000e-6"
+        Value         "C_value"
         Show          off
       }
       Parameter {
@@ -1239,7 +1244,7 @@ Plecs {
       }
       Parameter {
         Variable      "Parameters"
-        Value         ""
+        Value         "C_value,T_d_vdc"
         Show          off
       }
       Parameter {
@@ -1255,20 +1260,20 @@ Plecs {
       Parameter {
         Variable      "Declarations"
         Value         "double v_dc_ref;\ndouble v_dc;\ndouble v_dc_0=800.0;\nd"
-"ouble C = 2000.0e-6;\ndouble T_d = 0.005;\ndouble K_p;\ndouble T_pi;\ndouble "
-"error, xi, dxi;\ndouble p_ref;\n"
+"ouble C;\ndouble T_d;\ndouble K_p;\ndouble T_pi;\ndouble error, xi, dxi;\ndou"
+"ble p_ref;\n"
         Show          off
       }
       Parameter {
         Variable      "StartFcn"
-        Value         "K_p =v_dc_0*C/T_d;\nT_pi = 0.1;\n"
+        Value         "C = ParamRealData(0, 0);\nT_d = ParamRealData(1, 0);\n"
+"\n\nK_p =C/T_d;\nT_pi = 0.1;\n"
         Show          off
       }
       Parameter {
         Variable      "OutputFcn"
-        Value         "v_dc = Input(0);\nv_dc_ref = Input(1);\nerror = v_dc_re"
-"f - v_dc;\n\nxi = ContState(0);\n\np_ref = K_p*(error + xi/T_pi);\n\nOutput(0"
-") = -p_ref;\n\n"
+        Value         "v_dc = Input(0);\nv_dc_ref = Input(1);\n\nxi = ContStat"
+"e(0);\n\np_ref = K_p*(error + xi/T_pi);\n\nOutput(0) = -p_ref;\n\n"
         Show          off
       }
       Parameter {
@@ -1279,7 +1284,7 @@ Plecs {
       Parameter {
         Variable      "DerivativeFcn"
         Value         "v_dc = Input(0);\nv_dc_ref = Input(1);\nerror = v_dc_re"
-"f - v_dc;\n\ndxi = error;\n\nContDeriv(0) = dxi;"
+"f*v_dc_ref - v_dc*v_dc;\n\ndxi = error;\n\nContDeriv(0) = dxi;"
         Show          off
       }
       Parameter {
@@ -1326,7 +1331,7 @@ Plecs {
       Position      [710, 495]
       Direction     up
       Flipped       off
-      Location      [172, 313; 960, 622]
+      Location      [1050, 629; 1838, 938]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADIA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGQA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABkAP///wAAAAMAAAAAAAAAAPw"
@@ -1336,8 +1341,8 @@ Plecs {
       SavedViews    "AAAAAgAAAAA="
       HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAC"
 "QAAAGQAAAAIAAAAZAAAAAcAAABkAAAABgAAAGQAAAAFAAAAZAAAAAQAAABkAAAAAwAAAGQAAAACAA"
-"AAZAAAAAEAAABkAAAAvgAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAABaAAA"
-"AAQAAAAAAAAAAAAAACQAAAAAAAABkAAAAAQAAAAA="
+"AAZAAAAAEAAABkAAAAcQAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAABaAAA"
+"AAQAAAAAAAAAAAAAACQAAAAAAAAAXAAAAAQAAAAA="
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0"
@@ -1479,7 +1484,7 @@ Plecs {
       }
       Parameter {
         Variable      "After"
-        Value         "[-30e3]"
+        Value         "[-150e3]"
         Show          off
       }
     }
@@ -1544,11 +1549,11 @@ Plecs {
       Position      [405, 85]
       Direction     up
       Flipped       off
-      Location      [776, 421; 1126, 648]
+      Location      [0, 25; 1920, 1034]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADIA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGQA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABkAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABGAP///wAAAV4AAADIAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABGAP///wAAB4AAAAPWAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -1716,7 +1721,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "Tag"
-        Value         "v_s_abc"
+        Value         "v_g_abc"
         Show          off
       }
       Parameter {
@@ -1785,7 +1790,7 @@ Plecs {
       Type          Scope
       Name          "p-q6"
       Show          on
-      Position      [555, 875]
+      Position      [655, 810]
       Direction     up
       Flipped       off
       Location      [960, 25; 1919, 1034]
@@ -1897,21 +1902,21 @@ Plecs {
       Parameter {
         Variable      "Declarations"
         Value         "double v_d;\ndouble v_q;\ndouble pi = 3.141592653589793"
-"23846;\ndouble T_d = 0.005;\ndouble K_p;\ndouble T_pi;\ndouble error, xi, dxi"
-";\ndouble w_max,w_min,w_0;\ndouble w_est,w_sat;\ndouble theta;"
+"23846;\ndouble T_d;\ndouble K_p;\ndouble T_pi;\ndouble error, xi, dxi;\ndoubl"
+"e w_max,w_min,w_0;\ndouble w_est,w_sat;\ndouble theta;\ndouble C;"
         Show          off
       }
       Parameter {
         Variable      "StartFcn"
         Value         "w_0 = 2.0*pi*50.0;\nw_max= w_0*1.1;\nw_min= w_0*0.9;\nK"
-"_p =10.0;\nT_pi = 1000.0;\n"
+"_p = 10.0;\nT_pi = 0.1;\n"
         Show          off
       }
       Parameter {
         Variable      "OutputFcn"
         Value         "v_d = Input(0);\nv_q = Input(1);\nerror = v_q;\n\nxi = "
-"ContState(0);\ntheta = ContState(1);\n\n\n\nOutput(0) = theta;\nOutput(1) = w"
-"_est;\n"
+"ContState(0);\ntheta = ContState(1);\n\n\n\nOutput(0) = theta + pi/2;\nOutput"
+"(1) = w_est;\n"
         Show          off
       }
       Parameter {
@@ -1994,11 +1999,11 @@ Plecs {
       Position      [860, 495]
       Direction     up
       Flipped       off
-      Location      [191, 399; 541, 626]
+      Location      [0, 25; 1920, 1034]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAADIA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGQA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABkAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABGAP///wAAAV4AAADIAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABGAP///wAAB4AAAAPWAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2126,7 +2131,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "L"
-        Value         "2.5e-4"
+        Value         "L_g_val"
         Show          off
       }
       Parameter {
@@ -2144,7 +2149,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "L"
-        Value         "2.5e-3"
+        Value         "L_g_val"
         Show          off
       }
       Parameter {
@@ -2162,7 +2167,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "L"
-        Value         "2.5e-4"
+        Value         "L_g_val"
         Show          off
       }
       Parameter {
@@ -2180,7 +2185,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "R"
-        Value         "0.1"
+        Value         "R_g_val"
         Show          off
       }
     }
@@ -2193,7 +2198,7 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "R"
-        Value         "0.1"
+        Value         "R_g_val"
         Show          off
       }
     }
@@ -2206,61 +2211,120 @@ Plecs {
       Flipped       off
       Parameter {
         Variable      "R"
-        Value         "0.1"
+        Value         "R_g_val"
         Show          off
       }
     }
     Component {
-      Type          Capacitor
-      Name          "C2"
+      Type          Scope
+      Name          "p-q7"
       Show          on
-      Position      [785, 275]
-      Direction     down
-      Flipped       on
-      Parameter {
-        Variable      "C"
-        Value         "10e-6"
-        Show          off
+      Position      [585, 325]
+      Direction     up
+      Flipped       off
+      Location      [776, 421; 1126, 648]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADIA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGQA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABkAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABGAP///wAAAV4AAADIAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAC"
+"QAAAGQAAAAIAAAAZAAAAAcAAABkAAAABgAAAGQAAAAFAAAAZAAAAAQAAABkAAAAAwAAAGQAAAACAA"
+"AAZAAAAAEAAABkAAAAfwAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAABoAAA"
+"AAQAAAAAAAAAAAAAACQAAAAAAAAAXAAAAAQAAAAA="
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "0.001"
+      SampleLimit   "0"
+      XAxisLabel    ""
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
       }
+      Fourier {
+        SingleXAxis   on
+        AxisLabel     "Frequency"
+        Scaling       0
+        PhaseDisplay  0
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          ThreePhaseMeter
+      Name          "3ph Meter1"
+      Show          off
+      Position      [1150, 205]
+      Direction     up
+      Flipped       off
       Parameter {
-        Variable      "v_init"
-        Value         "0"
+        Variable      "voltage"
+        Value         "1"
         Show          off
       }
     }
     Component {
-      Type          Capacitor
-      Name          "C3"
-      Show          on
-      Position      [830, 275]
-      Direction     down
-      Flipped       on
+      Type          Ground
+      Name          "Ground1"
+      Show          off
+      Position      [1150, 260]
+      Direction     up
+      Flipped       off
+    }
+    Component {
+      Type          Goto
+      Name          "Goto8"
+      Show          off
+      Position      [1170, 155]
+      Direction     up
+      Flipped       off
       Parameter {
-        Variable      "C"
-        Value         "10e-6"
+        Variable      "Tag"
+        Value         "i_g_abc"
         Show          off
       }
       Parameter {
-        Variable      "v_init"
-        Value         "0"
+        Variable      "Visibility"
+        Value         "1"
         Show          off
       }
     }
     Component {
-      Type          Capacitor
-      Name          "C4"
-      Show          on
-      Position      [870, 275]
-      Direction     down
-      Flipped       on
+      Type          Goto
+      Name          "Goto9"
+      Show          off
+      Position      [1130, 155]
+      Direction     up
+      Flipped       off
       Parameter {
-        Variable      "C"
-        Value         "10e-6"
+        Variable      "Tag"
+        Value         "v_g_abc"
         Show          off
       }
       Parameter {
-        Variable      "v_init"
-        Value         "0"
+        Variable      "Visibility"
+        Value         "1"
         Show          off
       }
     }
@@ -2342,7 +2406,7 @@ Plecs {
       Type          Wire
       SrcComponent  "Ground2"
       SrcTerminal   1
-      Points        [1140, 205]
+      Points        [1295, 205]
       DstComponent  "V_3ph"
       DstTerminal   4
     }
@@ -2410,14 +2474,6 @@ Plecs {
       SrcTerminal   1
       DstComponent  "RRF->3ph"
       DstTerminal   3
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "3ph->RRF"
-      SrcTerminal   2
-      Points        [475, 335; 475, 360]
-      DstComponent  "Mux"
-      DstTerminal   2
     }
     Connection {
       Type          Signal
@@ -2707,29 +2763,6 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Demux2"
-      SrcTerminal   2
-      Points        [495, 810; 495, 815]
-      Branch {
-        Points        [515, 815]
-        Branch {
-          DstComponent  "Goto3"
-          DstTerminal   1
-        }
-        Branch {
-          Points        [515, 875]
-          DstComponent  "p-q6"
-          DstTerminal   1
-        }
-      }
-      Branch {
-        Points        [495, 915; 230, 915]
-        DstComponent  "3ph->RRF4"
-        DstTerminal   3
-      }
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "3ph->RRF4"
       SrcTerminal   2
       Points        [310, 805; 310, 810]
@@ -2811,86 +2844,134 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "L4"
-      SrcTerminal   2
-      Points        [1060, 180; 1060, 195]
-      DstComponent  "V_3ph"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "L6"
-      SrcTerminal   2
-      Points        [1060, 230; 1060, 215]
-      DstComponent  "V_3ph"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "L5"
-      SrcTerminal   2
-      DstComponent  "V_3ph"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Wire
       SrcComponent  "R4"
       SrcTerminal   2
-      Points        [785, 180]
-      Branch {
-        Points        [750, 180; 750, 195]
-        DstComponent  "3ph Meter"
-        DstTerminal   4
-      }
-      Branch {
-        DstComponent  "C2"
-        DstTerminal   1
-      }
+      Points        [750, 180; 750, 195]
+      DstComponent  "3ph Meter"
+      DstTerminal   4
     }
     Connection {
       Type          Wire
       SrcComponent  "R6"
       SrcTerminal   2
-      Points        [870, 230]
-      Branch {
-        Points        [750, 230; 750, 215]
-        DstComponent  "3ph Meter"
-        DstTerminal   6
-      }
-      Branch {
-        DstComponent  "C4"
-        DstTerminal   1
-      }
+      Points        [750, 230; 750, 215]
+      DstComponent  "3ph Meter"
+      DstTerminal   6
     }
     Connection {
       Type          Wire
       SrcComponent  "3ph Meter"
       SrcTerminal   5
-      Points        [830, 205]
+      DstComponent  "R5"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph->RRF"
+      SrcTerminal   2
+      Points        [475, 335]
       Branch {
-        DstComponent  "R5"
+        Points        [475, 360]
+        DstComponent  "Mux"
         DstTerminal   2
       }
       Branch {
-        DstComponent  "C3"
+        Points        [475, 325]
+        DstComponent  "p-q7"
         DstTerminal   1
       }
     }
     Connection {
       Type          Wire
-      SrcComponent  "C2"
+      SrcComponent  "Ground1"
+      SrcTerminal   1
+      DstComponent  "3ph Meter1"
+      DstTerminal   9
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter1"
+      SrcTerminal   8
+      Points        [1155, 175]
+      DstComponent  "Goto8"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter1"
+      SrcTerminal   7
+      Points        [1145, 175]
+      DstComponent  "Goto9"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "3ph Meter1"
+      SrcTerminal   5
+      DstComponent  "V_3ph"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_3ph"
+      SrcTerminal   1
+      Points        [1225, 180; 1180, 180; 1180, 195]
+      DstComponent  "3ph Meter1"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "3ph Meter1"
+      SrcTerminal   6
+      Points        [1180, 215; 1180, 230; 1225, 230]
+      DstComponent  "V_3ph"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "L4"
       SrcTerminal   2
-      Points        [785, 295; 830, 295]
+      Points        [1105, 180; 1105, 195]
+      DstComponent  "3ph Meter1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "L5"
+      SrcTerminal   2
+      DstComponent  "3ph Meter1"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "L6"
+      SrcTerminal   2
+      Points        [1105, 230; 1105, 215]
+      DstComponent  "3ph Meter1"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux2"
+      SrcTerminal   2
+      Points        [495, 810]
       Branch {
-        Points        [870, 295]
-        DstComponent  "C4"
-        DstTerminal   2
+        Points        [495, 915; 230, 915]
+        DstComponent  "3ph->RRF4"
+        DstTerminal   3
       }
       Branch {
-        DstComponent  "C3"
-        DstTerminal   2
+        DstComponent  "p-q6"
+        DstTerminal   1
       }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Integrator"
+      SrcTerminal   2
+      DstComponent  "Goto3"
+      DstTerminal   1
     }
   }
 }
-DemoSignature "kj3wvbEM9jldv8V/nvjA+euJn+THS8BejZvWEjksZZ8="
+DemoSignature "B0IsKJ3SWRJKacDetxO5W16EGBAV6Ef8e1EHVAjQoa0="
