@@ -1,0 +1,4009 @@
+Plecs {
+  Name          "trafo_2"
+  Version       "4.1"
+  CircuitModel  "DiscStateSpace"
+  StartTime     "0.0"
+  StopTime      "2.0"
+  Timeout       ""
+  Solver        "FixedStepDiscrete"
+  MaxStep       "1e-4"
+  InitStep      "-1"
+  FixedStep     "1e-5"
+  Refine        "1"
+  ZCStepSize    "1e-9"
+  RelTol        "1e-3"
+  AbsTol        "-1"
+  TurnOnThreshold "0"
+  SyncFixedStepTasks "2"
+  UseSingleCommonBaseRate "2"
+  LossVariableLimitExceededMsg "3"
+  NegativeSwitchLossMsg "3"
+  DivisionByZeroMsg "3"
+  StiffnessDetectionMsg "2"
+  MaxConsecutiveZCs "1000"
+  AssertionAction "1"
+  InitializationCommands "S_b = 200e6;\nU_1_b = 220e3;\nU_2_b = 66e3;\nN1 = 10"
+"000;\nN2 = N1*U_2_b/U_1_b;\neps_R = 0.001;\nZ_1_b = U_1_b*U_1_b/S_b;\nZ_2_b ="
+" U_2_b*U_2_b/S_b;\n\nLong_horizontal = 1.0;\nLong_vertical = 2.0;\nRel_mu = 1"
+"000;\nSection = 0.3*0.3;\nR_1 = eps_R*Z_1_b/2;\nR_2 = eps_R*Z_2_b/2;\nB_sat ="
+" 1.0;\nLeak1 = 1.0e-9;\nLeak2 = 1.0e-9;\nLA1 = Leak1;\nLB1 = Leak1;\nLC1 = Le"
+"ak1;\nLA2 = Leak2;\nLB2 = Leak2;\nLC2 = Leak2;\n"
+  InitialState  "1"
+  SystemState   ""
+  CodeGenParameterInlining "2"
+  CodeGenInliningExceptions "AAAACwAAAAAA"
+  CodeGenFloatingPointFormat "2"
+  CodeGenIntegerWordSize "32"
+  CodeGenAbsTimeUsageMsg "3"
+  CodeGenBaseName ""
+  CodeGenOutputDir ""
+  CodeGenExtraOpts ""
+  CodeGenTarget "Generic"
+  CodeGenTargetSettings ""
+  ExtendedMatrixPrecision "1"
+  MatrixSignificanceCheck "2"
+  EnableStateSpaceSplitting "2"
+  DisplayStateSpaceSplitting "1"
+  DiscretizationMethod "2"
+  ExternalModeSettings ""
+  AlgebraicLoopMethod "1"
+  AlgebraicLoopTolerance "1e-6"
+  Schematic {
+    Location      [0, 33; 1157, 1011]
+    ZoomFactor    1.33333
+    SliderPosition [0, 0]
+    ShowBrowser   off
+    BrowserWidth  100
+    Component {
+      Type          Scope
+      Name          "Scope1"
+      Show          on
+      Position      [310, 200]
+      Direction     up
+      Flipped       off
+      Location      [948, 185; 1744, 848]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAKkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAxwAAAJ4AAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAC"
+"QAAAGQAAAAGAAAAZAAAAAcAAABkAAAABAAAAGQAAAAFAAAAZAAAAAIAAABkAAAAAwAAAGQAAAABAA"
+"AAZAAAAAgAAABkAAAAvwAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAsAAACmAAA"
+"AAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAA"
+"AAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAA"
+"AAZAAAAAQAAAAAAAAPoAA=="
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "4"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    ""
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis   on
+        AxisLabel     "Frequency"
+        Scaling       0
+        PhaseDisplay  0
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "flux2"
+      Show          on
+      Position      [60, 205]
+      Direction     right
+      Flipped       off
+    }
+    Component {
+      Type          Scope
+      Name          "Scope3"
+      Show          on
+      Position      [160, 205]
+      Direction     up
+      Flipped       off
+      Location      [948, 87; 1748, 1003]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAKkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAAyAAAAN1AAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAB"
+"QAAAGQAAAAGAAAAZAAAAAcAAABkAAAACAAAAGQAAAAJAAAAZAAAAAEAAABkAAAAAgAAAGQAAAADAA"
+"AAZAAAAAQAAABkAAAAqAAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAsAAACPAAA"
+"AAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAA"
+"AAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAA"
+"AAZAAAAAQAAAAAAAAPoAA=="
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "4"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    ""
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis   on
+        AxisLabel     "Frequency"
+        Scaling       0
+        PhaseDisplay  0
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux1"
+      Show          off
+      Position      [115, 205]
+      Direction     right
+      Flipped       on
+      Parameter {
+        Variable      "Width"
+        Value         "4"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux2"
+      Show          off
+      Position      [265, 190]
+      Direction     right
+      Flipped       on
+      Parameter {
+        Variable      "Width"
+        Value         "[3,3]"
+        Show          off
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "flux3"
+      Show          on
+      Position      [205, 190]
+      Direction     right
+      Flipped       off
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "flux4"
+      Show          on
+      Position      [205, 230]
+      Direction     right
+      Flipped       off
+    }
+    Component {
+      Type          Subsystem
+      Name          "Sub1"
+      Show          on
+      Position      [195, 95]
+      Direction     up
+      Flipped       off
+      Frame         [-40, -35; 40, 35]
+      LabelPosition [0, 0]
+      SampleTime    "-1"
+      CodeGenTarget "Generic"
+      MaskIconFrame on
+      MaskIconOpaque off
+      MaskIconRotates on
+      Terminal {
+        Type          Port
+        Position      [45, -25]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, -15]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, -5]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, 5]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, 15]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, 25]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, 25]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, 15]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, 5]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, -5]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, -15]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, -25]
+        Direction     left
+      }
+      Schematic {
+        Location      [467, 324; 1433, 729]
+        ZoomFactor    1
+        SliderPosition [0, 0]
+        ShowBrowser   off
+        BrowserWidth  100
+        Component {
+          Type          MagneticInterface
+          Name          "WA2"
+          Show          on
+          Position      [300, 265]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "n"
+            Value         "10000*66/220"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RA1"
+          Show          on
+          Position      [215, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_lin"
+          Name          "P_lin4"
+          Show          on
+          Position      [585, 95]
+          Direction     right
+          Flipped       off
+          Frame         [-15, -8; 15, 8]
+          LabelPosition [0, 11]
+          LabelAlign    up
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_horizontal"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0.0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          MagneticInterface
+          Name          "WA1"
+          Show          on
+          Position      [265, 185]
+          Direction     up
+          Flipped       off
+          Parameter {
+            Variable      "n"
+            Value         "10000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_lin"
+          Name          "P_lin5"
+          Show          on
+          Position      [615, 325]
+          Direction     right
+          Flipped       off
+          Frame         [-15, -8; 15, 8]
+          LabelPosition [0, 11]
+          LabelAlign    up
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_horizontal"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0.0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_lin"
+          Name          "P_lin6"
+          Show          on
+          Position      [340, 325]
+          Direction     right
+          Flipped       off
+          Frame         [-15, -8; 15, 8]
+          LabelPosition [0, 11]
+          LabelAlign    up
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_horizontal"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0.0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_lin"
+          Name          "P_lin7"
+          Show          on
+          Position      [325, 95]
+          Direction     right
+          Flipped       off
+          Frame         [-15, -8; 15, 8]
+          LabelPosition [0, 11]
+          LabelAlign    up
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_horizontal"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0.0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_lin"
+          Name          "P_lin8"
+          Show          on
+          Position      [265, 125]
+          Direction     down
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_vertical"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0.0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_lin"
+          Name          "P_lin9"
+          Show          on
+          Position      [475, 120]
+          Direction     down
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_vertical"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0.0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_lin"
+          Name          "P_lin10"
+          Show          on
+          Position      [710, 125]
+          Direction     down
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_vertical"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0.0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LA1"
+          Show          on
+          Position      [300, 185]
+          Direction     up
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [11, 0]
+          LabelAlign    left
+          Parameter {
+            Variable      "P"
+            Value         "1e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RA2"
+          Show          on
+          Position      [355, 240]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          MagneticInterface
+          Name          "WB2"
+          Show          on
+          Position      [510, 270]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "n"
+            Value         "10000*66/220"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RB1"
+          Show          on
+          Position      [425, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          MagneticInterface
+          Name          "WB1"
+          Show          on
+          Position      [475, 185]
+          Direction     up
+          Flipped       off
+          Parameter {
+            Variable      "n"
+            Value         "10000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LB1"
+          Show          on
+          Position      [515, 185]
+          Direction     up
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [11, 0]
+          LabelAlign    left
+          Parameter {
+            Variable      "P"
+            Value         "1e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RB2"
+          Show          on
+          Position      [565, 245]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          MagneticInterface
+          Name          "WC2"
+          Show          on
+          Position      [710, 260]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "n"
+            Value         "10000*66/220"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RC1"
+          Show          on
+          Position      [660, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          MagneticInterface
+          Name          "WC1"
+          Show          on
+          Position      [710, 185]
+          Direction     up
+          Flipped       off
+          Parameter {
+            Variable      "n"
+            Value         "10000"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LC1"
+          Show          on
+          Position      [750, 185]
+          Direction     up
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [11, 0]
+          LabelAlign    left
+          Parameter {
+            Variable      "P"
+            Value         "1e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RC2"
+          Show          on
+          Position      [770, 240]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LA2"
+          Show          on
+          Position      [260, 265]
+          Direction     down
+          Flipped       on
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "P"
+            Value         "1e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LC2"
+          Show          on
+          Position      [670, 265]
+          Direction     down
+          Flipped       on
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "P"
+            Value         "1e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LB2"
+          Show          on
+          Position      [470, 265]
+          Direction     down
+          Flipped       on
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "P"
+            Value         "1e-9"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Port
+          Name          "A2"
+          Show          on
+          Position      [400, 240]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "1"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "C2"
+          Show          on
+          Position      [835, 240]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "2"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "B2"
+          Show          on
+          Position      [625, 245]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "3"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "a2"
+          Show          on
+          Position      [400, 280]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "4"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "b2"
+          Show          on
+          Position      [625, 285]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "5"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "c2"
+          Show          on
+          Position      [835, 285]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "6"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "c1"
+          Show          on
+          Position      [600, 200]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "7"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "b1"
+          Show          on
+          Position      [365, 200]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "8"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "a1"
+          Show          on
+          Position      [155, 200]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "9"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "C1"
+          Show          on
+          Position      [600, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "10"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "B1"
+          Show          on
+          Position      [365, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "11"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "A1"
+          Show          on
+          Position      [155, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "12"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RA2"
+          SrcTerminal   1
+          Points        [325, 240; 325, 250]
+          DstComponent  "WA2"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "WA2"
+          SrcTerminal   3
+          Points        [300, 230; 265, 230]
+          Branch {
+            Points        [265, 215]
+            Branch {
+              DstComponent  "WA1"
+              DstTerminal   4
+            }
+            Branch {
+              Points        [300, 215]
+              DstComponent  "LA1"
+              DstTerminal   2
+            }
+          }
+          Branch {
+            Points        [260, 230]
+            DstComponent  "LA2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "WA2"
+          SrcTerminal   4
+          Points        [300, 295; 260, 295]
+          Branch {
+            Points        [260, 325]
+            DstComponent  "P_lin6"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "LA2"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RA1"
+          SrcTerminal   1
+          Points        [245, 160; 245, 170]
+          DstComponent  "WA1"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_lin4"
+          SrcTerminal   1
+          Points        [710, 95]
+          DstComponent  "P_lin10"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_lin4"
+          SrcTerminal   2
+          Points        [475, 95]
+          Branch {
+            DstComponent  "P_lin7"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "P_lin9"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "WA1"
+          SrcTerminal   3
+          Points        [265, 155]
+          Branch {
+            DstComponent  "P_lin8"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [300, 155]
+            DstComponent  "LA1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_lin5"
+          SrcTerminal   1
+          Points        [710, 325; 710, 295]
+          Branch {
+            Points        [670, 295]
+            DstComponent  "LC2"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "WC2"
+            DstTerminal   4
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_lin5"
+          SrcTerminal   2
+          Points        [470, 325]
+          Branch {
+            DstComponent  "P_lin6"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [470, 295]
+            Branch {
+              DstComponent  "WB2"
+              DstTerminal   4
+            }
+            Branch {
+              DstComponent  "LB2"
+              DstTerminal   2
+            }
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_lin8"
+          SrcTerminal   2
+          Points        [265, 95]
+          DstComponent  "P_lin7"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_lin9"
+          SrcTerminal   1
+          Points        [475, 150]
+          Branch {
+            DstComponent  "WB1"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [515, 150]
+            DstComponent  "LB1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_lin10"
+          SrcTerminal   1
+          Points        [710, 150]
+          Branch {
+            DstComponent  "WC1"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [750, 150]
+            DstComponent  "LC1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RB2"
+          SrcTerminal   1
+          Points        [535, 245; 535, 255]
+          DstComponent  "WB2"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "WB2"
+          SrcTerminal   3
+          Points        [510, 230; 475, 230]
+          Branch {
+            Points        [475, 215]
+            Branch {
+              DstComponent  "WB1"
+              DstTerminal   4
+            }
+            Branch {
+              Points        [515, 215]
+              DstComponent  "LB1"
+              DstTerminal   2
+            }
+          }
+          Branch {
+            Points        [475, 245]
+            DstComponent  "LB2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RB1"
+          SrcTerminal   1
+          Points        [455, 160; 455, 170]
+          DstComponent  "WB1"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RC2"
+          SrcTerminal   1
+          Points        [740, 240; 740, 245]
+          DstComponent  "WC2"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "WC2"
+          SrcTerminal   3
+          Points        [710, 235]
+          Branch {
+            Points        [670, 235]
+            DstComponent  "LC2"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [710, 215]
+            Branch {
+              DstComponent  "WC1"
+              DstTerminal   4
+            }
+            Branch {
+              Points        [750, 215]
+              DstComponent  "LC1"
+              DstTerminal   2
+            }
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RC1"
+          SrcTerminal   1
+          Points        [690, 160; 690, 170]
+          DstComponent  "WC1"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "A2"
+          SrcTerminal   1
+          Points        [380, 240; 375, 240]
+          DstComponent  "RA2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C2"
+          SrcTerminal   1
+          Points        [815, 240; 790, 240]
+          DstComponent  "RC2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "B2"
+          SrcTerminal   1
+          Points        [605, 245; 585, 245]
+          DstComponent  "RB2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "a2"
+          SrcTerminal   1
+          Points        [380, 280; 310, 280]
+          DstComponent  "WA2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "b2"
+          SrcTerminal   1
+          Points        [605, 285; 520, 285]
+          DstComponent  "WB2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "c2"
+          SrcTerminal   1
+          Points        [815, 285; 725, 285; 725, 275; 720, 275]
+          DstComponent  "WC2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "c1"
+          SrcTerminal   1
+          Points        [620, 200; 700, 200]
+          DstComponent  "WC1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "b1"
+          SrcTerminal   1
+          Points        [385, 200; 465, 200]
+          DstComponent  "WB1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "a1"
+          SrcTerminal   1
+          Points        [175, 200; 255, 200]
+          DstComponent  "WA1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C1"
+          SrcTerminal   1
+          Points        [620, 160; 640, 160]
+          DstComponent  "RC1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "B1"
+          SrcTerminal   1
+          Points        [385, 160; 405, 160]
+          DstComponent  "RB1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "A1"
+          SrcTerminal   1
+          Points        [175, 160; 195, 160]
+          DstComponent  "RA1"
+          DstTerminal   2
+        }
+      }
+    }
+    Component {
+      Type          ThreePhaseVoltageSource
+      Name          "V_3ph"
+      Show          on
+      Position      [95, 80]
+      Direction     up
+      Flipped       off
+      Parameter {
+        Variable      "V"
+        Value         "220e3*sqrt(2/3)"
+        Show          off
+      }
+      Parameter {
+        Variable      "w"
+        Value         "50"
+        Show          off
+      }
+      Parameter {
+        Variable      "phi"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "neutral"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Subsystem
+      Name          "Sub2"
+      Show          on
+      Position      [540, 100]
+      Direction     up
+      Flipped       off
+      Frame         [-40, -35; 40, 35]
+      LabelPosition [0, 0]
+      SampleTime    "-1"
+      CodeGenTarget "Generic"
+      MaskIconFrame on
+      MaskIconOpaque off
+      MaskIconRotates on
+      Terminal {
+        Type          Port
+        Position      [45, -25]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, -15]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, -5]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, 5]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, 15]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [45, 25]
+        Direction     right
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, 25]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, 15]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, 5]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, -5]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, -15]
+        Direction     left
+      }
+      Terminal {
+        Type          Port
+        Position      [-45, -25]
+        Direction     left
+      }
+      Schematic {
+        Location      [953, 230; 1919, 635]
+        ZoomFactor    1
+        SliderPosition [0, 0]
+        ShowBrowser   off
+        BrowserWidth  100
+        Component {
+          Type          MagneticInterface
+          Name          "WA2"
+          Show          on
+          Position      [300, 265]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "n"
+            Value         "N2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RA1"
+          Show          on
+          Position      [215, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          MagneticInterface
+          Name          "WA1"
+          Show          on
+          Position      [265, 185]
+          Direction     up
+          Flipped       off
+          Parameter {
+            Variable      "n"
+            Value         "N1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LA1"
+          Show          on
+          Position      [300, 185]
+          Direction     up
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [11, 0]
+          LabelAlign    left
+          Parameter {
+            Variable      "P"
+            Value         "LA1"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RA2"
+          Show          on
+          Position      [355, 240]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          MagneticInterface
+          Name          "WB2"
+          Show          on
+          Position      [510, 270]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "n"
+            Value         "N2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RB1"
+          Show          on
+          Position      [425, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          MagneticInterface
+          Name          "WB1"
+          Show          on
+          Position      [475, 185]
+          Direction     up
+          Flipped       off
+          Parameter {
+            Variable      "n"
+            Value         "N1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LB1"
+          Show          on
+          Position      [515, 185]
+          Direction     up
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [11, 0]
+          LabelAlign    left
+          Parameter {
+            Variable      "P"
+            Value         "LB1"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RB2"
+          Show          on
+          Position      [565, 245]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          MagneticInterface
+          Name          "WC2"
+          Show          on
+          Position      [710, 260]
+          Direction     down
+          Flipped       on
+          Parameter {
+            Variable      "n"
+            Value         "N2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RC1"
+          Show          on
+          Position      [660, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          MagneticInterface
+          Name          "WC1"
+          Show          on
+          Position      [710, 185]
+          Direction     up
+          Flipped       off
+          Parameter {
+            Variable      "n"
+            Value         "N1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Polarity"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LC1"
+          Show          on
+          Position      [750, 185]
+          Direction     up
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [11, 0]
+          LabelAlign    left
+          Parameter {
+            Variable      "P"
+            Value         "LC1"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Resistor
+          Name          "RC2"
+          Show          on
+          Position      [770, 240]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "R"
+            Value         "R_1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LA2"
+          Show          on
+          Position      [260, 265]
+          Direction     down
+          Flipped       on
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "P"
+            Value         "LA2"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LC2"
+          Show          on
+          Position      [670, 265]
+          Direction     down
+          Flipped       on
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "P"
+            Value         "LC2"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_leak"
+          Name          "LB2"
+          Show          on
+          Position      [470, 265]
+          Direction     down
+          Flipped       on
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "P"
+            Value         "LB2"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Port
+          Name          "A2"
+          Show          on
+          Position      [400, 240]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "1"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "C2"
+          Show          on
+          Position      [835, 240]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "2"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "B2"
+          Show          on
+          Position      [625, 245]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "3"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "a2"
+          Show          on
+          Position      [400, 280]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "4"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "b2"
+          Show          on
+          Position      [625, 285]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "5"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "c2"
+          Show          on
+          Position      [835, 285]
+          Direction     right
+          Flipped       on
+          Parameter {
+            Variable      "Index"
+            Value         "6"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "c1"
+          Show          on
+          Position      [600, 200]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "7"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "b1"
+          Show          on
+          Position      [365, 200]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "8"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "a1"
+          Show          on
+          Position      [155, 200]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "9"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "C1"
+          Show          on
+          Position      [600, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "10"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "B1"
+          Show          on
+          Position      [365, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "11"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Port
+          Name          "A1"
+          Show          on
+          Position      [155, 160]
+          Direction     right
+          Flipped       off
+          Parameter {
+            Variable      "Index"
+            Value         "12"
+            Show          on
+          }
+          Parameter {
+            Variable      "Width"
+            Value         "-1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_sat"
+          Name          "P_sat"
+          Show          on
+          Position      [355, 95]
+          Direction     right
+          Flipped       off
+          Frame         [-15, -8; 15, 8]
+          LabelPosition [0, 11]
+          LabelAlign    up
+          Parameter {
+            Variable      "fitting"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_horizontal"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_unsat"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_sat"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "B_sat"
+            Value         "B_sat"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_sat"
+          Name          "P_sat1"
+          Show          on
+          Position      [585, 95]
+          Direction     right
+          Flipped       off
+          Frame         [-15, -8; 15, 8]
+          LabelPosition [0, 11]
+          LabelAlign    up
+          Parameter {
+            Variable      "fitting"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_horizontal"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_unsat"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_sat"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "B_sat"
+            Value         "B_sat"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_sat"
+          Name          "P_sat2"
+          Show          on
+          Position      [615, 325]
+          Direction     right
+          Flipped       off
+          Frame         [-15, -8; 15, 8]
+          LabelPosition [0, 11]
+          LabelAlign    up
+          Parameter {
+            Variable      "fitting"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_horizontal"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_unsat"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_sat"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "B_sat"
+            Value         "B_sat"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_sat"
+          Name          "P_sat3"
+          Show          on
+          Position      [340, 325]
+          Direction     right
+          Flipped       off
+          Frame         [-15, -8; 15, 8]
+          LabelPosition [0, 11]
+          LabelAlign    up
+          Parameter {
+            Variable      "fitting"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_horizontal"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_unsat"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_sat"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "B_sat"
+            Value         "B_sat"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_sat"
+          Name          "P_sat4"
+          Show          on
+          Position      [265, 125]
+          Direction     down
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "fitting"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_vertical"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_unsat"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_sat"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "B_sat"
+            Value         "B_sat"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_sat"
+          Name          "P_sat5"
+          Show          on
+          Position      [475, 120]
+          Direction     down
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "fitting"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_vertical"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_unsat"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_sat"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "B_sat"
+            Value         "B_sat"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Magnetic/P_sat"
+          Name          "P_sat6"
+          Show          on
+          Position      [710, 125]
+          Direction     down
+          Flipped       off
+          Frame         [-8, -15; 8, 15]
+          LabelPosition [-11, 0]
+          LabelAlign    right
+          Parameter {
+            Variable      "fitting"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "A"
+            Value         "Section"
+            Show          off
+          }
+          Parameter {
+            Variable      "l"
+            Value         "Long_vertical"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_unsat"
+            Value         "Rel_mu"
+            Show          off
+          }
+          Parameter {
+            Variable      "mu_r_sat"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "B_sat"
+            Value         "B_sat"
+            Show          off
+          }
+          Parameter {
+            Variable      "F_init"
+            Value         "0"
+            Show          off
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, -20]
+            Direction     up
+          }
+          Terminal {
+            Type          MagneticPort
+            Position      [0, 20]
+            Direction     down
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RA2"
+          SrcTerminal   1
+          Points        [325, 240; 325, 250]
+          DstComponent  "WA2"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "WA2"
+          SrcTerminal   3
+          Points        [300, 230; 265, 230]
+          Branch {
+            Points        [265, 215]
+            Branch {
+              DstComponent  "WA1"
+              DstTerminal   4
+            }
+            Branch {
+              Points        [300, 215]
+              DstComponent  "LA1"
+              DstTerminal   2
+            }
+          }
+          Branch {
+            Points        [260, 230]
+            DstComponent  "LA2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "WA2"
+          SrcTerminal   4
+          Points        [300, 295; 260, 295]
+          Branch {
+            Points        [260, 325]
+            DstComponent  "P_sat3"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "LA2"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RA1"
+          SrcTerminal   1
+          Points        [245, 160; 245, 170]
+          DstComponent  "WA1"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_sat1"
+          SrcTerminal   1
+          Points        [710, 95]
+          DstComponent  "P_sat6"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_sat1"
+          SrcTerminal   2
+          Points        [475, 95]
+          Branch {
+            DstComponent  "P_sat"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "P_sat5"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "WA1"
+          SrcTerminal   3
+          Points        [265, 155]
+          Branch {
+            DstComponent  "P_sat4"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [300, 155]
+            DstComponent  "LA1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_sat2"
+          SrcTerminal   1
+          Points        [710, 325; 710, 295]
+          Branch {
+            Points        [670, 295]
+            DstComponent  "LC2"
+            DstTerminal   2
+          }
+          Branch {
+            DstComponent  "WC2"
+            DstTerminal   4
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_sat2"
+          SrcTerminal   2
+          Points        [470, 325]
+          Branch {
+            DstComponent  "P_sat3"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [470, 295]
+            Branch {
+              DstComponent  "WB2"
+              DstTerminal   4
+            }
+            Branch {
+              DstComponent  "LB2"
+              DstTerminal   2
+            }
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_sat4"
+          SrcTerminal   2
+          Points        [265, 95]
+          DstComponent  "P_sat"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_sat5"
+          SrcTerminal   1
+          Points        [475, 150]
+          Branch {
+            DstComponent  "WB1"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [515, 150]
+            DstComponent  "LB1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "P_sat6"
+          SrcTerminal   1
+          Points        [710, 150]
+          Branch {
+            DstComponent  "WC1"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [750, 150]
+            DstComponent  "LC1"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RB2"
+          SrcTerminal   1
+          Points        [535, 245; 535, 255]
+          DstComponent  "WB2"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "WB2"
+          SrcTerminal   3
+          Points        [510, 230; 475, 230]
+          Branch {
+            Points        [475, 215]
+            Branch {
+              DstComponent  "WB1"
+              DstTerminal   4
+            }
+            Branch {
+              Points        [515, 215]
+              DstComponent  "LB1"
+              DstTerminal   2
+            }
+          }
+          Branch {
+            Points        [475, 245]
+            DstComponent  "LB2"
+            DstTerminal   1
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RB1"
+          SrcTerminal   1
+          Points        [455, 160; 455, 170]
+          DstComponent  "WB1"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RC2"
+          SrcTerminal   1
+          Points        [740, 240; 740, 245]
+          DstComponent  "WC2"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Magnetic
+          SrcComponent  "WC2"
+          SrcTerminal   3
+          Points        [710, 235]
+          Branch {
+            Points        [670, 235]
+            DstComponent  "LC2"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [710, 215]
+            Branch {
+              DstComponent  "WC1"
+              DstTerminal   4
+            }
+            Branch {
+              Points        [750, 215]
+              DstComponent  "LC1"
+              DstTerminal   2
+            }
+          }
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "RC1"
+          SrcTerminal   1
+          Points        [690, 160; 690, 170]
+          DstComponent  "WC1"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "A2"
+          SrcTerminal   1
+          Points        [380, 240; 375, 240]
+          DstComponent  "RA2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C2"
+          SrcTerminal   1
+          Points        [815, 240; 790, 240]
+          DstComponent  "RC2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "B2"
+          SrcTerminal   1
+          Points        [605, 245; 585, 245]
+          DstComponent  "RB2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "a2"
+          SrcTerminal   1
+          Points        [380, 280; 310, 280]
+          DstComponent  "WA2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "b2"
+          SrcTerminal   1
+          Points        [605, 285; 520, 285]
+          DstComponent  "WB2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "c2"
+          SrcTerminal   1
+          Points        [815, 285; 725, 285; 725, 275; 720, 275]
+          DstComponent  "WC2"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "c1"
+          SrcTerminal   1
+          Points        [620, 200; 700, 200]
+          DstComponent  "WC1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "b1"
+          SrcTerminal   1
+          Points        [385, 200; 465, 200]
+          DstComponent  "WB1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "a1"
+          SrcTerminal   1
+          Points        [175, 200; 255, 200]
+          DstComponent  "WA1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "C1"
+          SrcTerminal   1
+          Points        [620, 160; 640, 160]
+          DstComponent  "RC1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "B1"
+          SrcTerminal   1
+          Points        [385, 160; 405, 160]
+          DstComponent  "RB1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Wire
+          SrcComponent  "A1"
+          SrcTerminal   1
+          Points        [175, 160; 195, 160]
+          DstComponent  "RA1"
+          DstTerminal   2
+        }
+      }
+    }
+    Component {
+      Type          ThreePhaseVoltageSource
+      Name          "V_3ph1"
+      Show          on
+      Position      [440, 85]
+      Direction     up
+      Flipped       off
+      Parameter {
+        Variable      "V"
+        Value         "220e3*sqrt(2/3)"
+        Show          off
+      }
+      Parameter {
+        Variable      "w"
+        Value         "50"
+        Show          off
+      }
+      Parameter {
+        Variable      "phi"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "neutral"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope2"
+      Show          on
+      Position      [770, 230]
+      Direction     up
+      Flipped       off
+      Location      [1, 33; 1919, 1034]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAKkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAd+AAAA5/w"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB34AAABEAP///wAAB34AAALdAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL8AMAAAAGAAAAC"
+"QAAAGQAAAAGAAAAZAAAAAcAAABkAAAABAAAAGQAAAAFAAAAZAAAAAgAAABkAAAHfgAAAAsBAAABAA"
+"AAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAsAAAChAAAAAQAAAAAAAABkAAAAAQAAAAAAAABkAAA"
+"AAQAAAAAAAABkAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAA"
+"AAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAWxAAAAAQAAAAAAAAPoAA=="
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "4"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    ""
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis   on
+        AxisLabel     "Frequency"
+        Scaling       0
+        PhaseDisplay  0
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "flux5"
+      Show          on
+      Position      [400, 210]
+      Direction     right
+      Flipped       off
+    }
+    Component {
+      Type          Scope
+      Name          "Scope4"
+      Show          on
+      Position      [595, 235]
+      Direction     up
+      Flipped       off
+      Location      [1, 33; 1919, 1034]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAKkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAB34AAAPKAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL/gMAAAAJAAAAC"
+"QAAAGQAAAAGAAAAZAAAAAcAAABkAAAABAAAAGQAAAAFAAAAZAAAAAIAAABkAAAAAwAAAGQAAAABAA"
+"AAZAAAAAgAAABkAAAAqAAAAAsBAAABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAsAAACPAAA"
+"AAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAA"
+"AAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAA"
+"AAZAAAAAQAAAAAAAAPoAA=="
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "4"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    ""
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis   on
+        AxisLabel     "Frequency"
+        Scaling       0
+        PhaseDisplay  0
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          SignalDemux
+      Name          "Demux4"
+      Show          off
+      Position      [720, 220]
+      Direction     right
+      Flipped       on
+      Parameter {
+        Variable      "Width"
+        Value         "[3,3]"
+        Show          off
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "flux6"
+      Show          on
+      Position      [670, 220]
+      Direction     right
+      Flipped       off
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "flux7"
+      Show          on
+      Position      [665, 260]
+      Direction     right
+      Flipped       off
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "flux8"
+      Show          on
+      Position      [400, 250]
+      Direction     right
+      Flipped       off
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "flux9"
+      Show          on
+      Position      [400, 290]
+      Direction     right
+      Flipped       off
+    }
+    Component {
+      Type          SignalMux
+      Name          "Mux"
+      Show          off
+      Position      [490, 220]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Width"
+        Value         "[4,4,4]"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalSelector
+      Name          "Cont\nSelector"
+      Show          off
+      Position      [530, 220]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "InputWidth"
+        Value         "12"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputIndices"
+        Value         "[1,5,9]"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalSelector
+      Name          "Cont\nSelector1"
+      Show          off
+      Position      [530, 255]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "InputWidth"
+        Value         "12"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputIndices"
+        Value         "[1,5,9]+1"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalSelector
+      Name          "Cont\nSelector2"
+      Show          off
+      Position      [530, 290]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "InputWidth"
+        Value         "12"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputIndices"
+        Value         "[1,5,9]+2"
+        Show          off
+      }
+    }
+    Component {
+      Type          SignalSelector
+      Name          "Cont\nSelector3"
+      Show          off
+      Position      [530, 325]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "InputWidth"
+        Value         "12"
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputIndices"
+        Value         "[1,5,9]+3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope5"
+      Show          on
+      Position      [530, 385]
+      Direction     up
+      Flipped       off
+      Location      [0, 0; 0, 0]
+      State         ""
+      SavedViews    ""
+      HeaderState   ""
+      PlotPalettes  ""
+      Axes          "4"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    ""
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis   on
+        AxisLabel     "Frequency"
+        Scaling       0
+        PhaseDisplay  0
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Component {
+      Type          PlecsProbe
+      Name          "flux10"
+      Show          on
+      Position      [445, 370]
+      Direction     right
+      Flipped       off
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   2
+      DstComponent  "Scope3"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   3
+      DstComponent  "Scope3"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   4
+      DstComponent  "Scope3"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux1"
+      SrcTerminal   5
+      DstComponent  "Scope3"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "flux2"
+      SrcTerminal   1
+      DstComponent  "Demux1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "flux3"
+      SrcTerminal   1
+      DstComponent  "Demux2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux2"
+      SrcTerminal   2
+      DstComponent  "Scope1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      Points        [265, 205]
+      DstComponent  "Scope1"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux2"
+      SrcTerminal   3
+      DstComponent  "Scope1"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "flux4"
+      SrcTerminal   1
+      Points        [245, 230; 245, 215]
+      DstComponent  "Scope1"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Sub1"
+      SrcTerminal   8
+      Points        [150, 110]
+      Branch {
+        Points        [150, 120]
+        Branch {
+          DstComponent  "Sub1"
+          DstTerminal   7
+        }
+        Branch {
+          Points        [150, 125; 60, 125; 60, 80]
+          DstComponent  "V_3ph"
+          DstTerminal   4
+        }
+      }
+      Branch {
+        DstComponent  "Sub1"
+        DstTerminal   9
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Sub1"
+      SrcTerminal   6
+      Points        [240, 110]
+      Branch {
+        DstComponent  "Sub1"
+        DstTerminal   5
+      }
+      Branch {
+        DstComponent  "Sub1"
+        DstTerminal   4
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_3ph"
+      SrcTerminal   1
+      DstComponent  "Sub1"
+      DstTerminal   12
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_3ph"
+      SrcTerminal   2
+      DstComponent  "Sub1"
+      DstTerminal   11
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_3ph"
+      SrcTerminal   3
+      DstComponent  "Sub1"
+      DstTerminal   10
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Sub2"
+      SrcTerminal   8
+      Points        [495, 115]
+      Branch {
+        Points        [495, 125]
+        Branch {
+          DstComponent  "Sub2"
+          DstTerminal   7
+        }
+        Branch {
+          Points        [495, 130; 405, 130; 405, 85]
+          DstComponent  "V_3ph1"
+          DstTerminal   4
+        }
+      }
+      Branch {
+        DstComponent  "Sub2"
+        DstTerminal   9
+      }
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_3ph1"
+      SrcTerminal   1
+      DstComponent  "Sub2"
+      DstTerminal   12
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_3ph1"
+      SrcTerminal   2
+      DstComponent  "Sub2"
+      DstTerminal   11
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "V_3ph1"
+      SrcTerminal   3
+      DstComponent  "Sub2"
+      DstTerminal   10
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "flux6"
+      SrcTerminal   1
+      DstComponent  "Demux4"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux4"
+      SrcTerminal   2
+      DstComponent  "Scope2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      Points        [725, 235]
+      DstComponent  "Scope2"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux4"
+      SrcTerminal   3
+      DstComponent  "Scope2"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "flux7"
+      SrcTerminal   1
+      Points        [705, 260; 705, 245]
+      DstComponent  "Scope2"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "flux5"
+      SrcTerminal   1
+      DstComponent  "Mux"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "flux8"
+      SrcTerminal   1
+      Points        [435, 250; 435, 220]
+      DstComponent  "Mux"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "flux9"
+      SrcTerminal   1
+      Points        [450, 290; 450, 230]
+      DstComponent  "Mux"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Cont\nSelector"
+      SrcTerminal   2
+      DstComponent  "Scope4"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Cont\nSelector1"
+      SrcTerminal   2
+      Points        [555, 255; 555, 230]
+      DstComponent  "Scope4"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Mux"
+      SrcTerminal   1
+      Points        [500, 220]
+      Branch {
+        DstComponent  "Cont\nSelector"
+        DstTerminal   1
+      }
+      Branch {
+        Points        [500, 255]
+        Branch {
+          DstComponent  "Cont\nSelector1"
+          DstTerminal   1
+        }
+        Branch {
+          Points        [500, 290]
+          Branch {
+            DstComponent  "Cont\nSelector2"
+            DstTerminal   1
+          }
+          Branch {
+            DstComponent  "Cont\nSelector3"
+            DstTerminal   1
+          }
+        }
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Cont\nSelector3"
+      SrcTerminal   2
+      Points        [565, 325]
+      DstComponent  "Scope4"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Cont\nSelector2"
+      SrcTerminal   2
+      Points        [560, 290; 560, 240]
+      DstComponent  "Scope4"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Sub2"
+      SrcTerminal   1
+      Points        [615, 75; 615, 115]
+      DstComponent  "Sub2"
+      DstTerminal   5
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Sub2"
+      SrcTerminal   3
+      Points        [595, 95; 595, 125]
+      DstComponent  "Sub2"
+      DstTerminal   6
+    }
+    Connection {
+      Type          Wire
+      SrcComponent  "Sub2"
+      SrcTerminal   2
+      Points        [630, 85; 630, 105]
+      DstComponent  "Sub2"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "flux10"
+      SrcTerminal   1
+      DstComponent  "Scope5"
+      DstTerminal   1
+    }
+  }
+  ProbeBlock {
+    Tag           "trafo_2/flux2"
+    Probe {
+      Component     "P_lin8"
+      Path          "Sub1"
+      Signals       {"MMF", "Flux", "Field strength", "Flux density"}
+    }
+  }
+  ProbeBlock {
+    Tag           "trafo_2/flux3"
+    Probe {
+      Component     "V_3ph"
+      Path          ""
+      Signals       {"Source voltage", "Source current"}
+    }
+  }
+  ProbeBlock {
+    Tag           "trafo_2/flux5"
+    Probe {
+      Component     "P_sat4"
+      Path          "Sub2"
+      Signals       {"MMF", "Flux", "Field strength", "Flux density"}
+    }
+  }
+  ProbeBlock {
+    Tag           "trafo_2/flux6"
+    Probe {
+      Component     "V_3ph1"
+      Path          ""
+      Signals       {"Source voltage", "Source current"}
+    }
+  }
+  ProbeBlock {
+    Tag           "trafo_2/flux8"
+    Probe {
+      Component     "P_sat5"
+      Path          "Sub2"
+      Signals       {"MMF", "Flux", "Field strength", "Flux density"}
+    }
+  }
+  ProbeBlock {
+    Tag           "trafo_2/flux9"
+    Probe {
+      Component     "P_sat6"
+      Path          "Sub2"
+      Signals       {"MMF", "Flux", "Field strength", "Flux density"}
+    }
+  }
+  ProbeBlock {
+    Tag           "trafo_2/flux10"
+    Probe {
+      Component     "LA1"
+      Path          "Sub2"
+      Signals       {"Flux"}
+    }
+  }
+}

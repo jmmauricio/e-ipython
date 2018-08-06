@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Hello world demo written in Brython www.brython.info">
+<meta name="keywords" content="Python,Brython">
+<meta charset="iso-8859-1">
+<script type="text/javascript" src="/src/brython.js"></script>
+<script type="text/javascript" src="/src/py_VFS.js"></script>
+</head>
+
+<body onload="brython(1)">
+
+<script type="text/python">
+from browser import document, alert
+import math
+
+@document["test"].bind("click")
+def echo(ev):
+    a = math.sin(document["zone"].value)
+    alert("Result {} !".format(str(a)))
+</script>
+<p>Your name is : <input id="zone" autocomplete="off">
+<button id="test">clic !</button>
+</body>
+
+</html>
